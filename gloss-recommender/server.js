@@ -27,6 +27,8 @@ const KEYWORD_GLOSS_MAP_FILE = process.env.KEYWORD_GLOSS_MAP ||
   path.join(__dirname, '..', 'dataset-builder', 'data', 'llm_pipeline', 'keyword_gloss_map.json');
 const INTENT_GLOSS_SETS_FILE = process.env.INTENT_GLOSS_SETS ||
   path.join(__dirname, '..', 'dataset-builder', 'data', 'llm_pipeline', 'intent_gloss_sets.json');
+const GLOSS_SET = process.env.GLOSS_SET || 'test_658';
+const GLOSS_SET_LABEL = process.env.GLOSS_SET_LABEL || GLOSS_SET;
 const OUT_OF_SCOPE_LABEL = {
   stage: '기타',
   subCategory: 'other',
@@ -1799,7 +1801,8 @@ app.get('/api/gloss-catalog', (_req, res) => {
       return { ...row, primarySets: spec.primary || [], secondarySets: spec.secondary || [] };
     }).sort((a, b) => a.stage.localeCompare(b.stage) || a.subCategory.localeCompare(b.subCategory));
     res.json({
-      glossSet: 'test_658',
+      glossSet: GLOSS_SET,
+      glossSetLabel: GLOSS_SET_LABEL,
       totalGlosses: glosses.length,
       assignedGlosses: assigned.size,
       unassignedGlosses: glosses.length - assigned.size,
@@ -1831,6 +1834,8 @@ app.get('/api/status', (_req, res) => {
   res.json({
     loaded: dataset.length > 0,
     count: dataset.length,
+    glossSet: GLOSS_SET,
+    glossSetLabel: GLOSS_SET_LABEL,
     embeddingRag: {
       indexFile: EMBEDDING_INDEX_FILE,
       available: fs.existsSync(EMBEDDING_INDEX_FILE),
@@ -1850,7 +1855,9 @@ app.get('/api/status', (_req, res) => {
       labels: questionAnswerPool?.labels?.length || 0,
       questions: questionAnswerPool?.questions?.length || 0,
       answers: questionAnswerPool?.counts?.answers || 0,
-      glossDocs: llmGlossVectorDb?.documents?.length || 0,
+      glossDocs: (llmGlossVectorDb?.documents || []).length,
+      glossSet: GLOSS_SET,
+      glossSetLabel: GLOSS_SET_LABEL,
     },
   });
 });
@@ -2153,7 +2160,8 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
       outputTuples: keywordCandidates.map(item => [item.gloss, item.glossIndex, item.score]),
       glossCandidates,
       labelValidation,
-      glossSet: 'test_658',
+      glossSet: GLOSS_SET,
+      glossSetLabel: GLOSS_SET_LABEL,
       glossDocCount: (glossVectorDb.documents || []).length,
       latencyMs: {
         total: Date.now() - startedAt,
@@ -2246,6 +2254,8 @@ app.post('/api/keywords', async (req, res) => {
       question,
       stage,
       subCategory,
+      glossSet: GLOSS_SET,
+      glossSetLabel: GLOSS_SET_LABEL,
       outOfScope: false,
       count: keywords.length,
       keywords,

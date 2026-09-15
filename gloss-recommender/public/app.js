@@ -244,3 +244,25 @@ function evidenceRowsHtml(candidates) {
         .join('')}</span>
     </div>`).join('');
 }
+
+function applyGlossSetBadge() {
+  fetch('/api/status')
+    .then(res => res.json())
+    .then(status => {
+      const label = status.glossSetLabel || status.glossSet || '';
+      const count = status.llmPipeline?.glossDocs;
+      document.querySelectorAll('[data-gloss-set]').forEach(el => {
+        const countText = Number.isFinite(count) ? ` · ${count}개` : '';
+        el.textContent = label ? `${label}${countText}` : '';
+        el.hidden = !label;
+      });
+      if (label) document.title = `${label} · 수어 글로스 추천기`;
+    })
+    .catch(() => {});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', applyGlossSetBadge);
+} else {
+  applyGlossSetBadge();
+}

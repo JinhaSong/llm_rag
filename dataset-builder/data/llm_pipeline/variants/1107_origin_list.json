@@ -1,0 +1,5621 @@
+{
+  "variant": "1107",
+  "label": "ETRIKSL 1107 (수포합 제외, 0–10 유지)",
+  "sourceTxt": "/home/etri/Documents/medical_qna_llm/dataset-builder/data/raw/source_xlsx/origin_numbers-ETRIKSL_1107.txt",
+  "counts": {
+    "uniqueOrigins": 1104,
+    "droppedSupohap": 0,
+    "digitGlosses": 15,
+    "missingDigits": []
+  },
+  "documents": [
+    {
+      "origin": 5621,
+      "name": "편찮다,아프다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11990,
+      "name": "약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2722,
+      "name": "(존재가)없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8966,
+      "name": "있다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9466,
+      "name": "괜찮다,무방하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6001,
+      "name": "줄이다,감소,절감,축소,줄다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9525,
+      "name": "주사,접종",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 944,
+      "name": "허리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6934,
+      "name": "계속,연속,이어,내내,-면서,지속",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7703,
+      "name": "오늘,금일,이번",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 19582,
+      "name": "과거",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7817,
+      "name": "(불가능)없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12408,
+      "name": "가능,할 수 있다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12468,
+      "name": "점검,감사,감시,감찰,검토,검사,수사,사찰,조사,살펴보다,살피다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6737,
+      "name": "느끼다,느낌,뉘앙스",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6556,
+      "name": "수술",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12573,
+      "name": "하나,일,한번",
+      "source": "etriksl_1107",
+      "digit": 1
+    },
+    {
+      "origin": 11006,
+      "name": "들어가다,방문하다,입장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11433,
+      "name": "아니다,아니",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24036,
+      "name": "아니다,않다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8935,
+      "name": "자연,천연,저절로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9862,
+      "name": "질병,병,병환,질환,앓다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2104,
+      "name": "더,게다가,더구나,추가",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8729,
+      "name": "그만,끝,까지,종결,종료,끝나다,마치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1420,
+      "name": "필요,소용",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10419,
+      "name": "먹다,식사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7422,
+      "name": "또,그리고,다시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9376,
+      "name": "결과,결말,마지막,최종,최후,결국,드디어,마침내",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11077,
+      "name": "사실,정말,진짜,참,맞다,정말로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3762,
+      "name": "걷다,걸음,도보,보행",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6990,
+      "name": "지금,갓,이제,인제,현재",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7957,
+      "name": "작다,다소,약간,조금,약소하다,자그마하다,적다,조그마하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7704,
+      "name": "오다,도래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7002,
+      "name": "안되다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4542,
+      "name": "나중,밖,이후,후",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12618,
+      "name": "시도,해보다,보이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5084,
+      "name": "(기온이)오르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5655,
+      "name": "몸,동체,몸뚱이,몸체,신체",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6800,
+      "name": "때,경우,시기,시대,시절,무렵,즈음",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6135,
+      "name": "말,말하다,언어",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24010,
+      "name": "병원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6767,
+      "name": "겪다,당하다,-던,-았(-었),적",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4145,
+      "name": "주무시다,자다,잠들다,잠자다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11536,
+      "name": "나,내,제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8385,
+      "name": "방법,요령,방식",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7363,
+      "name": "다르다,상이하다,딴",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6196,
+      "name": "붓다,부풀다,부풀리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3520,
+      "name": "불필요",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6486,
+      "name": "뼈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6094,
+      "name": "많다,흔하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11052,
+      "name": "똑같다,같다,동일하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2864,
+      "name": "받다,얻다,타다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11901,
+      "name": "그만,금지,그만두다,금하다,말다,하지 마",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8116,
+      "name": "중앙,도중,중,중도",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 328,
+      "name": "과,-꾼,전공,똑바로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8602,
+      "name": "날짜,언제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8925,
+      "name": "운동,스포츠,체육",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4178,
+      "name": "힘들다,벅차다,힘겹다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9078,
+      "name": "좋다,선",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12415,
+      "name": "간혹,가끔,때때로,이따금,종종",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11513,
+      "name": "기름,숙달,원활,능숙하다,매끄럽다,미끄럽다,순조롭다,자주,빈번히,낯익다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11959,
+      "name": "일개월,달",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8517,
+      "name": "건강,기력,강건하다,튼튼하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8472,
+      "name": "여기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6042,
+      "name": "신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4143,
+      "name": "좋다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7713,
+      "name": "왜,어째서",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8608,
+      "name": "강하다,견고하다,굳다,단단하다,딱딱하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6211,
+      "name": "빨강,빨갛다,적자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23922,
+      "name": "그냥,그저",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10420,
+      "name": "처음",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9185,
+      "name": "불가능,불능",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11068,
+      "name": "만,뿐,다만,단지,오로지,오직,한낱",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7364,
+      "name": "(신체의)다리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11849,
+      "name": "저녁",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6481,
+      "name": "빼다,깎다,덜다,제하다,배제,감면,빼기,제외,공제,생략,경감",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6798,
+      "name": "되다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7320,
+      "name": "문제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6980,
+      "name": "주세요,주십시오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12172,
+      "name": "낫다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6241,
+      "name": "생각,견해,사고,신경,의견,의사,의식,여기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12779,
+      "name": "드러눕다,누이다,눕다,눕히다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8303,
+      "name": "일주일,이레",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11514,
+      "name": "기상,일어나다,일어서다,서다,독립",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11896,
+      "name": "갑자기,갑작스럽다,별안간,갑작스레",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 651,
+      "name": "방뇨,소변,오줌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5468,
+      "name": "목",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6706,
+      "name": "달다,당분",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8150,
+      "name": "온도",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12778,
+      "name": "뒤엎다,뒤집어엎다,그러나,그런데,그렇지만,하지만",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3573,
+      "name": "미-,미처,아직",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6726,
+      "name": "길다,오래다,오래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6031,
+      "name": "알다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7497,
+      "name": "모두,온통,전부,전체,제반,모든,온,다,모조리,몽땅,죄다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3261,
+      "name": "요즘,요사이,요새,요즈음,최근",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12028,
+      "name": "엉덩이,궁둥이,볼기,히프",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10100,
+      "name": "그다음,다음",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9614,
+      "name": "조절,조정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12255,
+      "name": "손,맨손",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4535,
+      "name": "나쁘다,악,못되다,악하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7796,
+      "name": "소화",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11931,
+      "name": "모르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3810,
+      "name": "관계없다,막론하다,무관하다,상관없다,상관하지 않다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10897,
+      "name": "이외,기타",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23851,
+      "name": "둘,이",
+      "source": "etriksl_1107",
+      "digit": 2
+    },
+    {
+      "origin": 7491,
+      "name": "뜨겁다,화끈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6801,
+      "name": "때문,바람,탓,말미암다,인하다,-니까",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4765,
+      "name": "걱정,근심,상심,시름,염려,우수,괴롭다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11602,
+      "name": "머리,뇌,두뇌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6564,
+      "name": "술,알코올",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10877,
+      "name": "유익,이익,이득,이롭다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5780,
+      "name": "불면",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10440,
+      "name": "못하다,할 수 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7687,
+      "name": "부터,이래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8307,
+      "name": "주다,내밀다,내주다,건네주다,제공,교부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24022,
+      "name": "시작,개시,개최,거행,시발,착수,출발,열다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11796,
+      "name": "가다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11779,
+      "name": "일반,대개,보통,평범하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5397,
+      "name": "(신체의)눈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7362,
+      "name": "다니다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7336,
+      "name": "기다리다,대기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7689,
+      "name": "부피,양",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8410,
+      "name": "집,주택,가옥,세대,호,댁",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5644,
+      "name": "목적",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7953,
+      "name": "심호흡,호흡,공기,냄새,대기,목숨,생명,수,수명,숨,숨결,숨쉬다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12710,
+      "name": "꼭,약속,-야,필수,필시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9670,
+      "name": "추위,냉각,북,한랭,차다,춥다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23865,
+      "name": "매일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8219,
+      "name": "어지럽다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4998,
+      "name": "집행,활동,활약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 48,
+      "name": "내키다,싶다,원하다,바라다,소원,바람,욕구,염원,원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12756,
+      "name": "대략,대강,대충,약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10952,
+      "name": "알,계란,달걀",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11241,
+      "name": "밤,어둡다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6835,
+      "name": "가슴",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7666,
+      "name": "위험,험하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6437,
+      "name": "보다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2569,
+      "name": "아마도,아마,ㄹ 것이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12730,
+      "name": "(온도가)내리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11238,
+      "name": "기운,힘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11852,
+      "name": "제일,가장,맨,수석",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10493,
+      "name": "참다,견디다,인내,자제,억제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10239,
+      "name": "혈압",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7277,
+      "name": "미래,다음,앞날,장래,장차,향후",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8144,
+      "name": "앞",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5697,
+      "name": "유지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11612,
+      "name": "명확하다,정확,똑똑하다,뚜렷하다,명료하다,명백하다,분명하다,선명하다,확실하다,단연",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3478,
+      "name": "입석,서다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7806,
+      "name": "얼마,몇",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11287,
+      "name": "복귀,환원,되돌리다,그대로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10474,
+      "name": "발생,생성,나다,나오다,돋다,생기다,솟다,트다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8391,
+      "name": "방어,방지,수비,막다,저지,거절,차단",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4623,
+      "name": "곳,위치,장소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 908,
+      "name": "대다수,대부분,주로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11735,
+      "name": "없어지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8218,
+      "name": "어제,어저께,작일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6935,
+      "name": "계약,맺다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10981,
+      "name": "물",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5989,
+      "name": "이전,전",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6436,
+      "name": "보다,시각",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 22,
+      "name": "당부,부탁,요청,청하다,요구",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24024,
+      "name": "들",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7776,
+      "name": "아까",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7833,
+      "name": "반복,거듭,수시로,자꾸,자주,잦다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12438,
+      "name": "피곤,피로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6422,
+      "name": "멀미,메스껍다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6637,
+      "name": "동안,사이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6765,
+      "name": "가렵다,긁다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9543,
+      "name": "잘하다,잘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7094,
+      "name": "쥐",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6368,
+      "name": "깨다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11524,
+      "name": "까닭,뜻,명목,의미,이유,이치,뜻하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10155,
+      "name": "일등",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8407,
+      "name": "얼굴,낯,안면",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6085,
+      "name": "독,독하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8014,
+      "name": "약하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11203,
+      "name": "갈다,바꾸다,교대,교체,변경,변동",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6870,
+      "name": "가깝다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4573,
+      "name": "나타나다,드러나다,출현",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14442,
+      "name": "복부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2622,
+      "name": "적 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23862,
+      "name": "마찬가지,피장파장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24029,
+      "name": "삼,셋",
+      "source": "etriksl_1107",
+      "digit": 3
+    },
+    {
+      "origin": 8030,
+      "name": "전문",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8308,
+      "name": "입,이론",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1443,
+      "name": "합당하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10789,
+      "name": "신기하다,교묘하다,묘하다,오묘하다,이상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7729,
+      "name": "그대로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11047,
+      "name": "따로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5956,
+      "name": "크다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7951,
+      "name": "심장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8328,
+      "name": "바람,바람이 불다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10433,
+      "name": "모습,꼴,모양,상태,상황,장면,형상,형용,형태",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11197,
+      "name": "가져오다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6749,
+      "name": "담배,흡연",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12211,
+      "name": "봉사,공양,기증,제출,드리다,바치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11606,
+      "name": "며칠",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 301,
+      "name": "고루고루,유사,근사하다,비슷하다,흡사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7499,
+      "name": "모레,내일모레,이틀,이틀후",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12723,
+      "name": "날마다,나날,매번,매일,수시,일상,늘,매양,번번이,언제나,항상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6277,
+      "name": "마시다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9359,
+      "name": "감염,전염,옮다,걸리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9772,
+      "name": "돌아서다,갈다,교체하다,대체하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9877,
+      "name": "차이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12432,
+      "name": "결백,깔끔하다,깨끗하다,말끔하다,산뜻하다,소박하다,순결,순수,정결,청결",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5946,
+      "name": "고기,가죽,살",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4510,
+      "name": "교사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 930,
+      "name": "행동,거동,동작,짓,품행,행실,행위,움직이다,행하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5447,
+      "name": "돕다,거들다,기여,도움,보조,원조,지원,찬조",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6629,
+      "name": "넘어지다,쓰러지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10544,
+      "name": "특히,각별,별,특별,특수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12592,
+      "name": "완전하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11501,
+      "name": "근면,열성,열심",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23933,
+      "name": "답",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10515,
+      "name": "피차,둘이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7956,
+      "name": "작년,지난해",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9377,
+      "name": "결정,정하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3246,
+      "name": "입증,증명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11829,
+      "name": "칭찬",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6864,
+      "name": "(신체의)등",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11440,
+      "name": "애매하다,가물거리다,가물대다,불분명하다,막연하다,묘연하다,아물거리다,흐리다,희미하다,모호,불확실,어렴풋이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9389,
+      "name": "곤충,벌레",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12035,
+      "name": "왼쪽,좌측,좌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23903,
+      "name": "오락가락",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12168,
+      "name": "불량,결함",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11500,
+      "name": "근로,근무,노동,일,작업",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8904,
+      "name": "싶다,갈급",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7059,
+      "name": "이름,명,성명,성함",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8431,
+      "name": "첫째",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11547,
+      "name": "낮,대낮,백주,밝다,새다,트다,환하다,훤하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11518,
+      "name": "기침",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10435,
+      "name": "모자라다,결손,결핍,부족",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8620,
+      "name": "귀중하다,중요,막중하다,소중하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6573,
+      "name": "쉬다,휴가,휴게,휴식,휴양",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6774,
+      "name": "가지다,갖다,지니다,취하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6933,
+      "name": "계산,수,셈,세다¹,헤아리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23874,
+      "name": "바닥나다,비다,비우다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10403,
+      "name": "만큼,어치,정도,-쯤",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5675,
+      "name": "벌써,삽시간,어느덧,어느새,어언간,이미",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6636,
+      "name": "동시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12382,
+      "name": "초과,지나치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10793,
+      "name": "신중,경계,조심,주의,준수,지키다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11065,
+      "name": "마찬가지,같다,동일,맞다,동,똑같다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11526,
+      "name": "깨,세부,정밀,상세하다,세밀하다,자세하다,찬찬하다,치밀하다,샅샅이,꼼꼼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3024,
+      "name": "백,하양,하얗다,허옇다,희다,백색,흰색,치아,이,이빨",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10454,
+      "name": "묵직하다,무겁다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5522,
+      "name": "노력,안간힘,공들이다,애쓰다,힘쓰다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6320,
+      "name": "늘다,늘이다,늘리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11559,
+      "name": "년,해",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11053,
+      "name": "똥,대변",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6443,
+      "name": "내주,다음주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1397,
+      "name": "함께,같이,동반,랑,아울러,더불다,-끼리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9115,
+      "name": "발견",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 537,
+      "name": "팔,팔뚝",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12190,
+      "name": "절반,반",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10026,
+      "name": "관철,관통,꿰뚫다,알아맞히다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9147,
+      "name": "원래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11301,
+      "name": "(시간)시,시간",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23958,
+      "name": "서두르다,긴급,독촉,재촉,응급,급하다,시급하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23996,
+      "name": "비교,견주다,대조",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3663,
+      "name": "궁금하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1283,
+      "name": "만료",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 971,
+      "name": "화장실,변소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7224,
+      "name": "어느,무엇,어떤,무슨",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15149,
+      "name": "폐",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4302,
+      "name": "팔꿈치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7235,
+      "name": "절다,절룩거리다,절름거리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10737,
+      "name": "속",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9297,
+      "name": "하루,온종일,종일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12071,
+      "name": "일치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5456,
+      "name": "(혈액의)순환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3678,
+      "name": "관계,관련,상관,연관",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10720,
+      "name": "설명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6442,
+      "name": "내일,명일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 914,
+      "name": "게우다,구토,토하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10402,
+      "name": "만족,여유,자신,충족,넉넉하다,늠름하다,당당하다,떳떳하다,충분하다,푸짐하다,풍부하다,듬뿍,실컷",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11378,
+      "name": "바르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8291,
+      "name": "살다,삶,생활",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6036,
+      "name": "오른쪽,우측",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9928,
+      "name": "지각,지체,늦다,굼뜨다,느리다,더디다,천천하다,서서히",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12104,
+      "name": "사용,소비,쓰다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11916,
+      "name": "가만있다,멈추다,멎다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5577,
+      "name": "새벽",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7477,
+      "name": "죽다,돌아가다,사거,사망,서거,숨지다,죽음,임종",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24704,
+      "name": "이론,쓰다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9390,
+      "name": "곧다,단정하다,똑바르다,바르다,반듯하다,올바르다,점잖다,똑바르다,올곧다,정하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11833,
+      "name": "답답하다,갑갑하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5504,
+      "name": "변하다,변질,변화,변환,돌아서다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3956,
+      "name": "셋째,세 번째",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12264,
+      "name": "수면,숙박,잠,기숙사,자다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8993,
+      "name": "종류,가지,종목,종,다각,다각도",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6043,
+      "name": "신경질,짜증",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8355,
+      "name": "실수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7170,
+      "name": "신청,주문",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9351,
+      "name": "가만히,조용하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6288,
+      "name": "물건",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10270,
+      "name": "발걸음,발자국,밟다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6265,
+      "name": "선언,천명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23841,
+      "name": "넷,사",
+      "source": "etriksl_1107",
+      "digit": 4
+    },
+    {
+      "origin": 7695,
+      "name": "살찌다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 245,
+      "name": "지난주,작주,전주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11371,
+      "name": "별로,그다지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8233,
+      "name": "복구",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1768,
+      "name": "맞다,딱",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24028,
+      "name": "시간,한 시간",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11814,
+      "name": "되풀이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 17210,
+      "name": "두려움",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11845,
+      "name": "당신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11634,
+      "name": "문의,물음,질문,묻다,물어보다,여쭈다,여쭙다,-ㅂ니까",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11564,
+      "name": "논의,상담,상의,의논",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12326,
+      "name": "짓다,공작,작성,제작,제조,만들다,가공",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9846,
+      "name": "없다,비다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5514,
+      "name": "내년,명년,이듬해,다음해",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10741,
+      "name": "솔직하다,정직",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11467,
+      "name": "굉장하다,심하다,심각하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7876,
+      "name": "유방,젖",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3706,
+      "name": "귀",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7558,
+      "name": "기억,암기,외다,외우다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7323,
+      "name": "미리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9426,
+      "name": "제거",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6509,
+      "name": "높다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6546,
+      "name": "돌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11349,
+      "name": "과",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6929,
+      "name": "계단,층계",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7730,
+      "name": "맞지 않다,적합하지 않다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7160,
+      "name": "옷,의복,의상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11785,
+      "name": "자기,스스로,자체,혼자,홀로,자발",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10696,
+      "name": "삼,인삼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6885,
+      "name": "가입,등록",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8119,
+      "name": "찾다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5279,
+      "name": "이따가",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12177,
+      "name": "노랑,노랗다,누렇다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12053,
+      "name": "양분,영양,영양분,자양분",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12329,
+      "name": "짧다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12919,
+      "name": "신선하다,새롭다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10994,
+      "name": "단계,절차",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1276,
+      "name": "막다,막히다,먹다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12857,
+      "name": "내부,안,이내,내용",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23852,
+      "name": "들다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7251,
+      "name": "이야기,강의,설교",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11365,
+      "name": "의심,의회",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9128,
+      "name": "부러지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8185,
+      "name": "양말",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10156,
+      "name": "비지땀",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11055,
+      "name": "다섯,오",
+      "source": "etriksl_1107",
+      "digit": 5
+    },
+    {
+      "origin": 11992,
+      "name": "치매",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6281,
+      "name": "머무르다,존재,체류,계시다,묵다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3625,
+      "name": "열흘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4374,
+      "name": "날,해",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4917,
+      "name": "임신,회임",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6109,
+      "name": "수요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 103,
+      "name": "파랑,청색,파랗다,푸르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12852,
+      "name": "백점",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9360,
+      "name": "감정,기분,정서",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11676,
+      "name": "퍼지다,만연,분산,유포,해산,해체,번지다,옮다,흩어지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6946,
+      "name": "절정,정상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10385,
+      "name": "마다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12776,
+      "name": "두근거리다,불안,설레다,울렁거리다,조마조마하다,두근두근",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23990,
+      "name": "항복",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5308,
+      "name": "합치다,집합,합,모으다,모이다,합하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2715,
+      "name": "중지,끄다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4703,
+      "name": "끈기,끈덕지다,끈질기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7373,
+      "name": "닿다,밀착,붙다,붙이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12628,
+      "name": "푹,안식,편안,평안,편하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11965,
+      "name": "영향,끼치다,파급",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6391,
+      "name": "뚱뚱하다,비대,살찌다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5294,
+      "name": "풀이,세이프,수습,처리,해결,해소,풀다,해내다,조치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5358,
+      "name": "비싸다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11419,
+      "name": "여덟,팔",
+      "source": "etriksl_1107",
+      "digit": 8
+    },
+    {
+      "origin": 5511,
+      "name": "낳다,나다,태어나다,분만,생식,출산,출생,탄생,해산",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10635,
+      "name": "부드럽다,스펀지,말랑하다,무르다,물렁하다,보드랍다,유연하다,물렁물렁",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11571,
+      "name": "다급하다,성급하다,조급하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4571,
+      "name": "감싸다,둘러싸다,에워싸다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10055,
+      "name": "판이하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11813,
+      "name": "고난,고생,고초,고통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4408,
+      "name": "개인,사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10448,
+      "name": "무쇠,쇠,철",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 610,
+      "name": "두절,끊어지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7060,
+      "name": "이마",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8239,
+      "name": "사람,인간,분,이,자,-민",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11172,
+      "name": "매진,고갈,소모,동나다,매진되다,바닥나다,없애다,다 팔리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14866,
+      "name": "(신체기관)장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11147,
+      "name": "내용,경과,내역,사항",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8889,
+      "name": "(시간)시,시간",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12684,
+      "name": "억지,강제,형벌,징계,꼬집다,벌,징벌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6015,
+      "name": "지루하다,따분하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8408,
+      "name": "연락,연결",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11217,
+      "name": "거행,하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12619,
+      "name": "알 수 없다,이해가 안 되다,아리송하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6836,
+      "name": "가시,날카롭다,뾰족하다,예리하다,예민하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5582,
+      "name": "색깔,빛깔,색,색상,색채,컬러",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11875,
+      "name": "설사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6574,
+      "name": "쉽다,용이하다,쉽사리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6408,
+      "name": "갈등,마찰,거북하다,껄끄럽다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7857,
+      "name": "운전,핸들",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5081,
+      "name": "하찮다,보잘 것 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5372,
+      "name": "대장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5479,
+      "name": "무게,중량",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5394,
+      "name": "누구,누가,뉘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9175,
+      "name": "사진,찍다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10038,
+      "name": "나흘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12818,
+      "name": "것,몫,소유",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5984,
+      "name": "안심,안전,안정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10768,
+      "name": "스타일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8752,
+      "name": "앞당기다,당기다,잡아당기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6417,
+      "name": "듣다,소리,소식,청각",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10533,
+      "name": "통역,매개,변호,소개",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23826,
+      "name": "가져가다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9714,
+      "name": "겹치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12034,
+      "name": "외출",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24032,
+      "name": "배부르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6631,
+      "name": "넣다,담그다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12442,
+      "name": "곧,금명간,신속,이르다,냉큼,빨리,속히,썩,어서,얼른,이내,일찍,일찍이,-자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6376,
+      "name": "다행",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11307,
+      "name": "사흘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11510,
+      "name": "금전,돈,화폐",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1072,
+      "name": "혀,혓바닥",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7866,
+      "name": "열두시,정오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 437,
+      "name": "난항,어려워하다,어렵다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12397,
+      "name": "칠,일곱",
+      "source": "etriksl_1107",
+      "digit": 7
+    },
+    {
+      "origin": 10477,
+      "name": "발표,광고,표시,표현,나타내다,드러내다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9356,
+      "name": "갇히다,구류,하지 못하게 하다,지배",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5958,
+      "name": "맥박,맥",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1041,
+      "name": "호흡,공기,냄새,대기,목숨,생명,수,수명,숨,숨결,숨쉬다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6275,
+      "name": "마비",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1183,
+      "name": "지위,앉다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4426,
+      "name": "타자,타이핑",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1722,
+      "name": "남쪽,남,따뜻하다,포근하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9917,
+      "name": "죄송하다,사과,미안하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12841,
+      "name": "육,여섯",
+      "source": "etriksl_1107",
+      "digit": 6
+    },
+    {
+      "origin": 12102,
+      "name": "자신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9967,
+      "name": "칼,나이프",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12687,
+      "name": "여성,부녀,부녀자,여인,여자,계집",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10698,
+      "name": "삼월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10423,
+      "name": "-면,임시,그러면",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10531,
+      "name": "토요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1502,
+      "name": "감당,사명,책임,담당,소임,역임,맡다,책임지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6032,
+      "name": "알맞다,적정,적당하다,적절하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7222,
+      "name": "어긋나다,엇갈리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 828,
+      "name": "가라앉히다,냉각,가라앉다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8380,
+      "name": "복사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11316,
+      "name": "악취,나쁜 냄새",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12429,
+      "name": "겉",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11427,
+      "name": "오너라,오라",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10265,
+      "name": "차기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6071,
+      "name": "수영",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7585,
+      "name": "금요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9746,
+      "name": "나이,나잇살,살,연령,연세",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6492,
+      "name": "덥다,더위",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 969,
+      "name": "화요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 735,
+      "name": "동결,얼다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10631,
+      "name": "복장,입다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6153,
+      "name": "버리다,폐기,폐하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11436,
+      "name": "안 보이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6875,
+      "name": "검정,검다,까맣다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10555,
+      "name": "팔월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6053,
+      "name": "침대",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11356,
+      "name": "단위,제한,한계,한도,한정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9733,
+      "name": "담그다,잠기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12642,
+      "name": "벽",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5670,
+      "name": "번호,번,숫자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10949,
+      "name": "안녕,안부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11085,
+      "name": "무겁다,부담",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9542,
+      "name": "잘못",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2792,
+      "name": "거치다,방해,지장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6524,
+      "name": "선풍기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9104,
+      "name": "보름",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7229,
+      "name": "전화,전화기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12645,
+      "name": "부진,퇴보,퇴화,하강,하락,후퇴",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12757,
+      "name": "대리,대신,대치,대체,전환,바꾸다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4675,
+      "name": "그저께,그제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6640,
+      "name": "맡기다,임명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6635,
+      "name": "교통사고",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1475,
+      "name": "더미,무궁무진,무진장,산더미",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3404,
+      "name": "벗다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11914,
+      "name": "남",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11478,
+      "name": "구입,쇼핑,매수,사다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11219,
+      "name": "건너다,횡단,건너다,넘다,넘어가다,침범",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10596,
+      "name": "재활",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9102,
+      "name": "보람",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11126,
+      "name": "확장,넓힘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11463,
+      "name": "유예,연기,물리다,미루다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23846,
+      "name": "대립",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10919,
+      "name": "십,열",
+      "source": "etriksl_1107",
+      "digit": 10
+    },
+    {
+      "origin": 4307,
+      "name": "혼신,온몸",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6096,
+      "name": "수고,노고,품",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2022,
+      "name": "곤두박질,곤두질,떨어지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6433,
+      "name": "보내다,파견",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7700,
+      "name": "우울,울상,시무룩하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7312,
+      "name": "맵다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9832,
+      "name": "어린이,새끼,아이,어린아이,소아",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2374,
+      "name": "값,대금",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7972,
+      "name": "반찬",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6127,
+      "name": "목요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6279,
+      "name": "마음,심리,심정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10472,
+      "name": "밖에",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7752,
+      "name": "의지,기대다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4561,
+      "name": "(눈을)감다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5051,
+      "name": "쉰,오십",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7732,
+      "name": "전기,전자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 18165,
+      "name": "고난",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3900,
+      "name": "달라다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4607,
+      "name": "테니스,정구",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9217,
+      "name": "센터",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7377,
+      "name": "(쌀이)떨어지다,(쌀이)바닥나다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11058,
+      "name": "떨다,떨리다,떨림",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10824,
+      "name": "예,끄덕이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8673,
+      "name": "장애,병신,제대로 안되다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11554,
+      "name": "내쉬다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9423,
+      "name": "점차",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6223,
+      "name": "더럽다,때,불결,지저분하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12411,
+      "name": "가르다,나누다,구별,구분,분류,분별,분할,유별",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12051,
+      "name": "옮기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8597,
+      "name": "귀신,마귀,사탄,악마,유령",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10771,
+      "name": "습관,버릇",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 363,
+      "name": "누락,빠지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11797,
+      "name": "기회,찬스",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6715,
+      "name": "기계,장치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2238,
+      "name": "상하다,다치다,부상,상처,손상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10488,
+      "name": "골몰,전념,집중,골똘하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11495,
+      "name": "그릇되다,틀리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7042,
+      "name": "코",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 32,
+      "name": "균형,대등,수평,평등,표준,평평하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12922,
+      "name": "유월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10990,
+      "name": "구월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9103,
+      "name": "보류",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9650,
+      "name": "찌르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11113,
+      "name": "형형색색,가지각색,각양각색",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7528,
+      "name": "멍하다,멍하니",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5776,
+      "name": "불구,장애",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10393,
+      "name": "마침,딱 맞다,알맞다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6212,
+      "name": "대학교",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23951,
+      "name": "복사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12165,
+      "name": "만나다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7392,
+      "name": "간단하다,간략하다,간편하다,단순,편리,편의",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9875,
+      "name": "(공간이)차다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7958,
+      "name": "아래,이하,후배,하류,하",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9011,
+      "name": "차",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10231,
+      "name": "화장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10085,
+      "name": "뒤따르다,수행,따라가다,따르다,좇다,쫓다,쫓아가다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12792,
+      "name": "십이월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12891,
+      "name": "사월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7437,
+      "name": "경계",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4463,
+      "name": "탑승,오르다,올라서다,올라타다,타다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6138,
+      "name": "무뚝뚝하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7488,
+      "name": "멍,멍들다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14132,
+      "name": "검진",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6450,
+      "name": "너,네,자네",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7082,
+      "name": "전통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7744,
+      "name": "젊다,청춘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5560,
+      "name": "대학",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10391,
+      "name": "마지못하다,무릅쓰다,불구하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23946,
+      "name": "무조건,무작정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11915,
+      "name": "가르치다,교육,교수하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5957,
+      "name": "매주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 31,
+      "name": "균일,동일,골고루,일제히",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 801,
+      "name": "경과,흐르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5275,
+      "name": "복판,가운데,중심,한가운데",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8316,
+      "name": "(맛이)쓰다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11707,
+      "name": "저축,예금,적금",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11611,
+      "name": "명령,분부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12240,
+      "name": "선택,뽑다,선발,선출,택하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8026,
+      "name": "칠월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7478,
+      "name": "죽이다,해치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9522,
+      "name": "짜다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24033,
+      "name": "설거지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2652,
+      "name": "월,달",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10923,
+      "name": "십이,열둘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8987,
+      "name": "(공간이)좁다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23875,
+      "name": "받다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2000,
+      "name": "양치질,양치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11656,
+      "name": "버스",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6905,
+      "name": "등산",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9142,
+      "name": "분석,해석",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2325,
+      "name": "마이너스,감표,덜기,빼기,빼기표,뺄셈표,뺄셈 부호",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8670,
+      "name": "절대,절대로,한사코",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23873,
+      "name": "바닥",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8384,
+      "name": "복잡하다,산만하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10998,
+      "name": "가볍다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8230,
+      "name": "월요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12707,
+      "name": "구,아홉",
+      "source": "etriksl_1107",
+      "digit": 9
+    },
+    {
+      "origin": 10284,
+      "name": "할머니,조모",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2361,
+      "name": "꺾다,부러지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4182,
+      "name": "진단,진료,진찰,검진",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3679,
+      "name": "근본,기반,기본,기초,바탕,뿌리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15635,
+      "name": "오디오,듣다,소식,청각",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 22277,
+      "name": "회사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8271,
+      "name": "위",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11780,
+      "name": "일월,정월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6597,
+      "name": "망설이다,주저,머무적거리다,머뭇거리다,서슴다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5676,
+      "name": "붙들다,검거,붙잡다,잡다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2623,
+      "name": "정신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5947,
+      "name": "고기,물고기,생선,헤엄치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8002,
+      "name": "오전,상오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7410,
+      "name": "두껍다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11413,
+      "name": "세면,세수,씻다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9077,
+      "name": "종합",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11568,
+      "name": "누르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7816,
+      "name": "(가진 것이)없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6456,
+      "name": "맛있다,맛나다,맛",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5025,
+      "name": "오후,하오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2231,
+      "name": "일출,동,아침,(해가)돋다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 128,
+      "name": "털",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9937,
+      "name": "체념,기권,포기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2470,
+      "name": "상류,선배,위,이상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 82,
+      "name": "풍선",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7771,
+      "name": "자전거,사이클",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9590,
+      "name": "재작년,거거년,전전년,전전해,지지난해,재작년도",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1384,
+      "name": "한꺼번에",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7372,
+      "name": "당황",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7066,
+      "name": "이불,침구,덮다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6294,
+      "name": "모기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23960,
+      "name": "싫다,거부,거절,난색",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6927,
+      "name": "경험",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12765,
+      "name": "더하기,플러스",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3721,
+      "name": "날씬하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7197,
+      "name": "은혜,은총",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11,
+      "name": "-국,국가,나라",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4197,
+      "name": "탁구,핑퐁",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12518,
+      "name": "황홀,휘황하다,휘황찬란하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 127,
+      "name": "턱",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12173,
+      "name": "낮다,비하",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3903,
+      "name": "달리기,달리다,뛰다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12947,
+      "name": "빠지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11063,
+      "name": "마약,아편,중독,탐닉",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 835,
+      "name": "가시다,사라지다,상실",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24701,
+      "name": "(맛이)짜다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12528,
+      "name": "넷,사",
+      "source": "etriksl_1107",
+      "digit": 4
+    },
+    {
+      "origin": 649,
+      "name": "방관,방임,내버리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5993,
+      "name": "이해,납득",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8226,
+      "name": "월경,생리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9365,
+      "name": "개별,각,각각,각기,개개,낱낱이,제각기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9242,
+      "name": "싱겁다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6462,
+      "name": "무의미",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8300,
+      "name": "일요일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6805,
+      "name": "멸치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9956,
+      "name": "치아,이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11150,
+      "name": "놀다,실업",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3988,
+      "name": "뽑다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6802,
+      "name": "떠나다,송별,이별,작별,헤어지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8213,
+      "name": "어마어마하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9350,
+      "name": "가루,분말",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6683,
+      "name": "구급차,응급차,앰뷸런스",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10925,
+      "name": "십일월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12110,
+      "name": "입장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23975,
+      "name": "종류,계통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8944,
+      "name": "성적,염소,점수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4237,
+      "name": "하릴없다,어쩔 수 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8671,
+      "name": "절대,공,공공,결코,절대로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4322,
+      "name": "귀찮다,불편,성가시다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11998,
+      "name": "싫다,싫어하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7598,
+      "name": "최고,달성,이루다,이룩하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12103,
+      "name": "자유,임의,마구,마음껏,마음대로,멋대로,제멋대로,함부로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11004,
+      "name": "갈비,늑골,갈비뼈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12704,
+      "name": "교사,교원,사범,선생,스승,교직자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9594,
+      "name": "치료",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12407,
+      "name": "가끔",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8622,
+      "name": "관절",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7223,
+      "name": "어깨",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6785,
+      "name": "간,간장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6536,
+      "name": "마치,척하다,체하다,처럼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7367,
+      "name": "당뇨병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1409,
+      "name": "피부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12410,
+      "name": "가령,만약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9098,
+      "name": "엑스레이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12508,
+      "name": "혹시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6993,
+      "name": "척추",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3682,
+      "name": "근육",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8963,
+      "name": "입원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8799,
+      "name": "어디",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10964,
+      "name": "병원,의원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2911,
+      "name": "안과",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3078,
+      "name": "보약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3468,
+      "name": "일상생활",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9654,
+      "name": "체중,몸무게",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7461,
+      "name": "둘째,두 번째",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5771,
+      "name": "서류,문서",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4797,
+      "name": "한의원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7419,
+      "name": "두통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7584,
+      "name": "금연",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23937,
+      "name": "두통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10341,
+      "name": "동네,마을",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6595,
+      "name": "망각,잊다,잊어버리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7618,
+      "name": "정부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14585,
+      "name": "수면제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6818,
+      "name": "계획",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1241,
+      "name": "종신,생애,일생,평생,필생,한평생",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 514,
+      "name": "퇴원",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7390,
+      "name": "결핵,폐결핵,폐병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1400,
+      "name": "한약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12117,
+      "name": "졸리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7711,
+      "name": "의사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 862,
+      "name": "갱생,회복",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8451,
+      "name": "바늘",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5624,
+      "name": "평상,평상시,평소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6086,
+      "name": "독감",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7808,
+      "name": "얼음,얼음장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4795,
+      "name": "잠깐,잠시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2773,
+      "name": "예전,옛날,옛적",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3759,
+      "name": "건조",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6441,
+      "name": "몸살",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11921,
+      "name": "고민",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9481,
+      "name": "올해,금년,당년,올",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11317,
+      "name": "알아서 하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 75,
+      "name": "피,출혈,혈,혈액",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8198,
+      "name": "커피",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7691,
+      "name": "부활",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8147,
+      "name": "오후,점심 후",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11721,
+      "name": "시원하다,평화,화평",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5028,
+      "name": "공범",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14709,
+      "name": "연고",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3714,
+      "name": "나머지,남다,여분",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9209,
+      "name": "성공",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9593,
+      "name": "치과",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11877,
+      "name": "바깥",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6463,
+      "name": "비,강우,비가 내리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6172,
+      "name": "병자,환자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 642,
+      "name": "힘없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3122,
+      "name": "보호자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 473,
+      "name": "평균,평균값,평균치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7583,
+      "name": "금식",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14094,
+      "name": "간호사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10979,
+      "name": "마스크",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2246,
+      "name": "에어컨,냉방",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9833,
+      "name": "어색하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6775,
+      "name": "가짜",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7586,
+      "name": "금주,술을 끊다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 107,
+      "name": "파악",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 636,
+      "name": "목록,식순,순서,안건",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11943,
+      "name": "금주,이번 주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7988,
+      "name": "엉뚱하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1877,
+      "name": "통보,알리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14340,
+      "name": "면역",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 263,
+      "name": "증명서",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6770,
+      "name": "가족,식구,세대,가구",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1545,
+      "name": "물약",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 211,
+      "name": "우두머리,두목,수장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2402,
+      "name": "오랜만,오래간만,오랫동안,오랜,모처럼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7842,
+      "name": "봄",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7968,
+      "name": "세월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6577,
+      "name": "막걸리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5472,
+      "name": "낫다,치유",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7256,
+      "name": "어떻게,어찌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9631,
+      "name": "직접",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6303,
+      "name": "교수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7641,
+      "name": "정신차리다,가다듬다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9568,
+      "name": "잠수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9666,
+      "name": "추석,한가위",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4353,
+      "name": "타인,남",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7629,
+      "name": "충청남도,충남",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11234,
+      "name": "그",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6937,
+      "name": "주위,주변,둘레",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10686,
+      "name": "삭제,고무,고무지우개,지우다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9561,
+      "name": "취미",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11869,
+      "name": "사탕,알사탕,캔디",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 564,
+      "name": "띄다,뜨이다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10412,
+      "name": "맡기다,소장,놓다,놓아두다,두다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 475,
+      "name": "평면도",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10223,
+      "name": "행복,복",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24045,
+      "name": "이중,중복",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7798,
+      "name": "속다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9101,
+      "name": "보라,보라색",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6182,
+      "name": "무선,전기,전자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 842,
+      "name": "가지고 다니다,휴대",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11883,
+      "name": "어리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6562,
+      "name": "(공기의)순환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4704,
+      "name": "끈적끈적",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6521,
+      "name": "선조,조상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7076,
+      "name": "욕심,탐",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10457,
+      "name": "문자,글자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10985,
+      "name": "미안",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1406,
+      "name": "한편",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11544,
+      "name": "낡다,부패,묵다,썩다,헌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9387,
+      "name": "고프다,시장,굶다,배고프다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6369,
+      "name": "깨다,깨뜨리다,파괴,파손",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23939,
+      "name": "마리아",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1801,
+      "name": "묶다,매듭",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8424,
+      "name": "착각,착오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6755,
+      "name": "딱 맞다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11984,
+      "name": "안개",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2311,
+      "name": "회계,재정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5407,
+      "name": "서울,서울시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 794,
+      "name": "격주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11502,
+      "name": "근방,가까이,근처,부근,인근",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3758,
+      "name": "건의,제의",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6675,
+      "name": "교환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6150,
+      "name": "뱉다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8101,
+      "name": "요리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4663,
+      "name": "굽다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10135,
+      "name": "삼키다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9460,
+      "name": "맛없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4483,
+      "name": "군",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5671,
+      "name": "벌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7308,
+      "name": "맥주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3965,
+      "name": "첫날",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1064,
+      "name": "헌혈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4615,
+      "name": "골프",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6177,
+      "name": "내리다,하차",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6747,
+      "name": "닭",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9694,
+      "name": "젖",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4787,
+      "name": "초록색",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11714,
+      "name": "승낙,수락,승인,허가,허락,허용",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7859,
+      "name": "울다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12460,
+      "name": "자결,자살,자해",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9675,
+      "name": "축구,차다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4351,
+      "name": "타월,수건",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3787,
+      "name": "보건소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8128,
+      "name": "열중쉬어",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9366,
+      "name": "개월,몇 개월",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 24041,
+      "name": "(바지를)입다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6531,
+      "name": "마주치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4578,
+      "name": "거리,길거리,통행",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1524,
+      "name": "깜박대다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6225,
+      "name": "농담",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4528,
+      "name": "꿀벌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6794,
+      "name": "동행",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15046,
+      "name": "충치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11972,
+      "name": "어기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12773,
+      "name": "동사무소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7575,
+      "name": "미끄러지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10027,
+      "name": "교란,짬뽕,혼합,섞다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8317,
+      "name": "(모자를)쓰다,모자(를 쓰다)",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6621,
+      "name": "납부,납입,지급,지불,내다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10377,
+      "name": "뜨다,개안",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7790,
+      "name": "반대,반하다,반-",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11194,
+      "name": "가득,차다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4434,
+      "name": "고함,비명,아우성,부르짖다,외치다,지르다,소리를 지르다,소리치다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9206,
+      "name": "성격,-성,성미,성질,질",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9904,
+      "name": "젖다,적시다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11506,
+      "name": "글월,문,문구,문장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11035,
+      "name": "되돌아오다,돌아오다,귀환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10762,
+      "name": "순서,목차,순번,순위,절차,차례,프로그램",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11800,
+      "name": "김치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3507,
+      "name": "결손,손해,손실",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9786,
+      "name": "빈틈없다,완벽",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9403,
+      "name": "이전",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9180,
+      "name": "분열",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9997,
+      "name": "탄압,압박,억압",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2211,
+      "name": "소수점,점",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12535,
+      "name": "놀이,놀다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7469,
+      "name": "머리카락,모발,두발,머리털",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11325,
+      "name": "필기,쓰다,적다,쓰기,저술,서술",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7824,
+      "name": "연습",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9346,
+      "name": "가꾸다,기르다,배양,양성,양육,육성,키우다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2648,
+      "name": "(영어지문자)시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4751,
+      "name": "갓난아기,갓난아이,아기,영아,젖먹이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6716,
+      "name": "기관지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7845,
+      "name": "(과일)배",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2511,
+      "name": "띵하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1214,
+      "name": "공,영",
+      "source": "etriksl_1107",
+      "digit": 0
+    },
+    {
+      "origin": 5806,
+      "name": "서쪽",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12548,
+      "name": "문득,언뜻",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7001,
+      "name": "안내,어서 들어오세요,어서 오세요",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4908,
+      "name": "수,운,운명,운수,점,천명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10887,
+      "name": "의자,걸상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4529,
+      "name": "꿇다,무릎(을) 꿇다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8337,
+      "name": "바지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9869,
+      "name": "짜다,소금",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2731,
+      "name": "옮다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10650,
+      "name": "비율,백분율,퍼센트,성향",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23866,
+      "name": "매일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11236,
+      "name": "긁어모으다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7083,
+      "name": "전파",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7875,
+      "name": "유명",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7030,
+      "name": "친절,대우,접대,서비스,대접",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1468,
+      "name": "닷새",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7946,
+      "name": "상식",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5048,
+      "name": "수영장",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5075,
+      "name": "소제,청소",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7145,
+      "name": "화상,영화",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12027,
+      "name": "손목시계,시계",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11871,
+      "name": "불,불타다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8962,
+      "name": "입술",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 213,
+      "name": "운동화",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12437,
+      "name": "계절,사계,사계절,사철,철",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6434,
+      "name": "보내다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11360,
+      "name": "둘 중 어느 것",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7827,
+      "name": "연필",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3019,
+      "name": "내밀다,떠밀다,밀다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7792,
+      "name": "소주",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5869,
+      "name": "아르바이트",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6856,
+      "name": "단체,그룹,모임,부,부분,부서,서클,회",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9083,
+      "name": "주간",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11534,
+      "name": "끓다,끓이다,데우다,때다,삶다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12632,
+      "name": "반신반의",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5632,
+      "name": "번개",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10022,
+      "name": "고의,일부러",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 4562,
+      "name": "(머리를)감다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23949,
+      "name": "백",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 18633,
+      "name": "비유,보기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8476,
+      "name": "여름",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5137,
+      "name": "유별나다,독특,유별스럽다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7093,
+      "name": "중학교",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9181,
+      "name": "분위기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7717,
+      "name": "외국,이국,타국",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8941,
+      "name": "사우나",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9139,
+      "name": "백만",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11391,
+      "name": "부딪히다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11980,
+      "name": "이용",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6512,
+      "name": "생존",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6361,
+      "name": "가방",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2766,
+      "name": "연말,세밑",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7508,
+      "name": "경제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7772,
+      "name": "자정",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2452,
+      "name": "파란색",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3624,
+      "name": "열중,몰두",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2674,
+      "name": "삐다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11604,
+      "name": "먼지,티끌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6000,
+      "name": "줄넘기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6883,
+      "name": "가위,가위질",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7043,
+      "name": "코끼리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9560,
+      "name": "충청북도,충북",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7675,
+      "name": "사무",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5590,
+      "name": "보수,수리,수선",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2336,
+      "name": "경악,깜짝,놀라다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12869,
+      "name": "넘기다,(다음으로)넘어가다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12377,
+      "name": "지시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11288,
+      "name": "부르다,소환,호출",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6966,
+      "name": "시키다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12,
+      "name": "국가시험,국가 고시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10924,
+      "name": "십일,열하나",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11425,
+      "name": "열하나,십일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12668,
+      "name": "열셋,십삼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12790,
+      "name": "십삼,열셋",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10921,
+      "name": "십사,열넷",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11421,
+      "name": "열넷,십사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12667,
+      "name": "열다섯,십오",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10922,
+      "name": "십오,열다섯",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12791,
+      "name": "십육,열여섯",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12793,
+      "name": "십칠,열일곱",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12670,
+      "name": "열일곱,십칠",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10926,
+      "name": "십팔,열여덟",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12669,
+      "name": "열여덟,십팔",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11423,
+      "name": "열아홉,십구",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10920,
+      "name": "십구,열아홉",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12865,
+      "name": "칠십,일흔",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3475,
+      "name": "일흔,칠십",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9136,
+      "name": "백",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 2939,
+      "name": "일백,백",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23981,
+      "name": "천",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5426,
+      "name": "만",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10398,
+      "name": "만",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9837,
+      "name": "억",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12003,
+      "name": "반",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 23974,
+      "name": "절반",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8890,
+      "name": "(한)시",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3472,
+      "name": "일월 일일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6995,
+      "name": "천년",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6105,
+      "name": "백일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11667,
+      "name": "첫돌",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6090,
+      "name": "만점",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 182,
+      "name": "한 적 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 228,
+      "name": "전염병,돌림병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 297,
+      "name": "최근",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1047,
+      "name": "허벅다리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1300,
+      "name": "발목",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1462,
+      "name": "달성",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 1519,
+      "name": "발가락",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 3593,
+      "name": "본래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5361,
+      "name": "서다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 5576,
+      "name": "새롭다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6159,
+      "name": "불편",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6350,
+      "name": "기본",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 6854,
+      "name": "단지",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7138,
+      "name": "아침",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7147,
+      "name": "옆구리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7658,
+      "name": "적있다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7696,
+      "name": "살피다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7773,
+      "name": "씹다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7828,
+      "name": "열",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 7980,
+      "name": "손가라",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8010,
+      "name": "신다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8075,
+      "name": "중",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8225,
+      "name": "원하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 8983,
+      "name": "진동",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9062,
+      "name": "저리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9160,
+      "name": "사각",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9490,
+      "name": "주말",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9673,
+      "name": "추천",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9818,
+      "name": "약간",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 9925,
+      "name": "중요",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10107,
+      "name": "울렁거리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10387,
+      "name": "마음대로",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10783,
+      "name": "시작",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10800,
+      "name": "심하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10833,
+      "name": "오래",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10843,
+      "name": "온종일",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10891,
+      "name": "이따금",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10899,
+      "name": "이틀,이틀 후",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 10941,
+      "name": "아무",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11057,
+      "name": "둘,이",
+      "source": "etriksl_1107",
+      "digit": 2
+    },
+    {
+      "origin": 11311,
+      "name": "삼,셋",
+      "source": "etriksl_1107",
+      "digit": 3
+    },
+    {
+      "origin": 11315,
+      "name": "아홉,구",
+      "source": "etriksl_1107",
+      "digit": 9
+    },
+    {
+      "origin": 11454,
+      "name": "전신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11647,
+      "name": "바라다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11765,
+      "name": "이것",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11922,
+      "name": "둘레",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 11950,
+      "name": "며칠전",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12192,
+      "name": "점수",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12351,
+      "name": "정상",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12462,
+      "name": "잠들다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12475,
+      "name": "종아리",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12724,
+      "name": "날카롭다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12832,
+      "name": "전자",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12836,
+      "name": "손등",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12910,
+      "name": "밤낮",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 12939,
+      "name": "깜짝",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14133,
+      "name": "검진",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14158,
+      "name": "고혈압",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14164,
+      "name": "골다공증",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14165,
+      "name": "골반",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14183,
+      "name": "관절",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14297,
+      "name": "두통",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14363,
+      "name": "무릎",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14385,
+      "name": "발",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14423,
+      "name": "병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14577,
+      "name": "손목",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14671,
+      "name": "알레르기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14679,
+      "name": "암",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14736,
+      "name": "완화",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14756,
+      "name": "위염",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14973,
+      "name": "지속",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 14989,
+      "name": "진통제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15012,
+      "name": "척추",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15096,
+      "name": "콩팥병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15118,
+      "name": "통증",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 15376,
+      "name": "동작",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 16727,
+      "name": "인대",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 18941,
+      "name": "앉다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 19011,
+      "name": "역사",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 20090,
+      "name": "서부터",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 20804,
+      "name": "하이픈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100177,
+      "name": "먹다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100218,
+      "name": "붓다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100221,
+      "name": "여러 번",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100257,
+      "name": "끊다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100288,
+      "name": "안움직임",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100302,
+      "name": "긁다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100336,
+      "name": "앉았다가일어나다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100342,
+      "name": "찌릿찌릿",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100368,
+      "name": "꼬리뼈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100402,
+      "name": "둘주하나",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100448,
+      "name": "올리다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 100516,
+      "name": "손가락마디",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101001,
+      "name": "날카로운 것으로 찌르다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101002,
+      "name": "간염",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101003,
+      "name": "간지러움",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101004,
+      "name": "간질환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101005,
+      "name": "개비",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101006,
+      "name": "고지혈증",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101007,
+      "name": "골다공증1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101008,
+      "name": "관절",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101009,
+      "name": "관절염1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101010,
+      "name": "뇌혈관질환",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101011,
+      "name": "누워있다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101012,
+      "name": "당김",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101013,
+      "name": "두부",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101014,
+      "name": "디스크1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101015,
+      "name": "따가움",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101016,
+      "name": "발뒤꿈치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101017,
+      "name": "발바닥",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101018,
+      "name": "부작용1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101019,
+      "name": "부종",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101020,
+      "name": "불타는 듯하다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101021,
+      "name": "뻐근",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101022,
+      "name": "소염진통제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101023,
+      "name": "속이 안좋다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101024,
+      "name": "시림",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101025,
+      "name": "시큰",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101026,
+      "name": "앉아 있다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101027,
+      "name": "암1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101028,
+      "name": "행동1",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101029,
+      "name": "위십이지장 궤양",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101030,
+      "name": "위염",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101031,
+      "name": "음식",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101032,
+      "name": "인대",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101033,
+      "name": "잠 깨다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101034,
+      "name": "전기처럼",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101035,
+      "name": "찬물",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101036,
+      "name": "콕콕",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101037,
+      "name": "항생제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101038,
+      "name": "항우울제",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101039,
+      "name": "화끈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 101040,
+      "name": "힘빠지다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 200124,
+      "name": "구토",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 200202,
+      "name": "척추뼈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 200947,
+      "name": "두드러기",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500001,
+      "name": "귀밑뼈",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500002,
+      "name": "기운이 없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500003,
+      "name": "나",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500004,
+      "name": "명치",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500005,
+      "name": "목움직임",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500006,
+      "name": "반병",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500007,
+      "name": "발걸음을 무겁게 옮기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500008,
+      "name": "변경",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500009,
+      "name": "뻐근하고 당기다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500010,
+      "name": "시술",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500011,
+      "name": "엉덩이",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500012,
+      "name": "욱신욱신",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500013,
+      "name": "입을 벌리고 닫다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500014,
+      "name": "전혀없다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500015,
+      "name": "일등",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500016,
+      "name": "진단받다",
+      "source": "etriksl_1107"
+    },
+    {
+      "origin": 500017,
+      "name": "했다",
+      "source": "etriksl_1107"
+    }
+  ],
+  "droppedSupohap": [],
+  "digits": [
+    {
+      "digit": 0,
+      "origins": [
+        1214
+      ]
+    },
+    {
+      "digit": 1,
+      "origins": [
+        12573
+      ]
+    },
+    {
+      "digit": 2,
+      "origins": [
+        23851,
+        11057
+      ]
+    },
+    {
+      "digit": 3,
+      "origins": [
+        24029,
+        11311
+      ]
+    },
+    {
+      "digit": 4,
+      "origins": [
+        23841,
+        12528
+      ]
+    },
+    {
+      "digit": 5,
+      "origins": [
+        11055
+      ]
+    },
+    {
+      "digit": 6,
+      "origins": [
+        12841
+      ]
+    },
+    {
+      "digit": 7,
+      "origins": [
+        12397
+      ]
+    },
+    {
+      "digit": 8,
+      "origins": [
+        11419
+      ]
+    },
+    {
+      "digit": 9,
+      "origins": [
+        12707,
+        11315
+      ]
+    },
+    {
+      "digit": 10,
+      "origins": [
+        10919
+      ]
+    }
+  ]
+}

@@ -15,6 +15,10 @@ body {
 .app-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
 .app-header h1 { font-size: 22px; line-height: 1.25; }
 .app-header p { font-size: 13px; color: #636366; margin-top: 4px; }
+.gloss-set-badge {
+  display: inline-block; margin-top: 8px; padding: 3px 9px; border-radius: 999px;
+  background: #eceeff; color: #3b42c4; font-size: 12px; font-weight: 700;
+}
 .app-link { font-size: 13px; font-weight: 600; color: #636af5; text-decoration: none; white-space: nowrap; }
 .app-link:hover { text-decoration: underline; }
 .app-nav { display: flex; align-items: center; gap: 14px; }

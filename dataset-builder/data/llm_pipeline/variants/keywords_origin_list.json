@@ -1,0 +1,890 @@
+{
+  "variant": "keywords",
+  "label": "답변 핵심표제어 only (수포합 제외, 0–10 보충)",
+  "sourceXlsx": "/home/etri/Documents/medical_qna_llm/dataset-builder/data/raw/source_xlsx/실증문장 수어표기기반 표제어정리_260909.xlsx",
+  "sourceSheet": "환자문장단위표제어",
+  "column": "핵심표제어",
+  "counts": {
+    "uniqueOrigins": 111,
+    "skipped": 4,
+    "fromCore": 103,
+    "fromDigits": 8
+  },
+  "documents": [
+    {
+      "origin": 14363,
+      "name": "무릎",
+      "source": "excel_core_keyword",
+      "stage": "진료개시",
+      "sampleAnswer": "무릎 아파서 병원에 왔었어요."
+    },
+    {
+      "origin": 944,
+      "name": "허리",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "허리가 아파서 왔어요."
+    },
+    {
+      "origin": 7364,
+      "name": "다리",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "다리가 불편해서 왔어요."
+    },
+    {
+      "origin": 100288,
+      "name": "안움직임",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "손가락이 아파서 왔어요."
+    },
+    {
+      "origin": 12028,
+      "name": "엉덩이",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "엉치가 아파가지고 왔어요."
+    },
+    {
+      "origin": 6042,
+      "name": "신",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "발 통증이 너무 심해서 왔어요."
+    },
+    {
+      "origin": 500004,
+      "name": "명치",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "허리하고 명치가 계속 아파서 왔어요."
+    },
+    {
+      "origin": 100448,
+      "name": "올리다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "어깨가 불편합니다."
+    },
+    {
+      "origin": 1519,
+      "name": "발가락",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "전에는 손쪽이 붓고 막 아팠는데 지금 발쪽, 발가락 쪽까지 쑤시거든요"
+    },
+    {
+      "origin": 200202,
+      "name": "척추뼈",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "디스크 있던 부위가 제일 아프고, 그 주변으로 통증이 뻗치는 것 같아요."
+    },
+    {
+      "origin": 12397,
+      "name": "칠",
+      "source": "excel_core_keyword",
+      "stage": "통증강도",
+      "sampleAnswer": "한 7점 정도 되는 것 같아요"
+    },
+    {
+      "origin": 11055,
+      "name": "다섯",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "평소에는 5-6점 정도요."
+    },
+    {
+      "origin": 12841,
+      "name": "육",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "평소에는 5-6점 정도요."
+    },
+    {
+      "origin": 12707,
+      "name": "구",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "하지만 통증이 극심할 때는 9-10점까지도 느껴요."
+    },
+    {
+      "origin": 10919,
+      "name": "십",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "하지만 통증이 극심할 때는 9-10점까지도 느껴요."
+    },
+    {
+      "origin": 10493,
+      "name": "참다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "너무 아파요."
+    },
+    {
+      "origin": 7817,
+      "name": "없다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "너무 아파요."
+    },
+    {
+      "origin": 10800,
+      "name": "심하다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "많이 아파요."
+    },
+    {
+      "origin": 9818,
+      "name": "약간",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "조금 아파요"
+    },
+    {
+      "origin": 19011,
+      "name": "역사",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "움직이기 힘들어요"
+    },
+    {
+      "origin": 5780,
+      "name": "불면",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "잠을 못 잘 정도로 아파요."
+    },
+    {
+      "origin": 6934,
+      "name": "계속",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "계속 아픈 상태예요."
+    },
+    {
+      "origin": 12407,
+      "name": "가끔",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "가끔 많이 아파요"
+    },
+    {
+      "origin": 8218,
+      "name": "어제",
+      "source": "excel_core_keyword",
+      "stage": "통증발생시점",
+      "sampleAnswer": "어제부터 되게 심하게 아프네요"
+    },
+    {
+      "origin": 11950,
+      "name": "며칠전",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "오른쪽 무릎이 며칠 전부터 계속 시큰거리고 걸을 때마다 아프거든요."
+    },
+    {
+      "origin": 245,
+      "name": "지난주",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "1주일 전부터 발가락이 쑤시고 아파요."
+    },
+    {
+      "origin": 10833,
+      "name": "오래",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "다리 통증은 한 10년도 넘었어요."
+    },
+    {
+      "origin": 11959,
+      "name": "일개월",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "한달 전부터 갈비뼈 쪽이나 왼쪽 쪽으로 약간씩 아프더라고요."
+    },
+    {
+      "origin": 6635,
+      "name": "교통사고",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "(교통)사고가 나고 나서부터 불편해졌지만 그땐 참을만했었는데."
+    },
+    {
+      "origin": 8303,
+      "name": "일주일",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "2주 넘게 아파서 왔어요."
+    },
+    {
+      "origin": 100342,
+      "name": "찌릿찌릿",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "허리가 쑤시고 아파요"
+    },
+    {
+      "origin": 10454,
+      "name": "묵직하다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "목이 뻐근하고 무거운 느낌이에요"
+    },
+    {
+      "origin": 7491,
+      "name": "뜨겁다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "발이 화끈거리고 타는 듯 아파요"
+    },
+    {
+      "origin": 11871,
+      "name": "불",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "발이 화끈거리고 타는 듯 아파요"
+    },
+    {
+      "origin": 500007,
+      "name": "발걸음을 무겁게 옮기다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "무릎이 묵직하게 아파요"
+    },
+    {
+      "origin": 12724,
+      "name": "날카롭다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "손가락이 날카롭게 찌르는 것처럼 아파요"
+    },
+    {
+      "origin": 9650,
+      "name": "찌르다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "손가락이 날카롭게 찌르는 것처럼 아파요"
+    },
+    {
+      "origin": 12832,
+      "name": "전자",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "전기 오는 것처럼 찌릿해요"
+    },
+    {
+      "origin": 8983,
+      "name": "진동",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "전기 오는 것처럼 찌릿해요"
+    },
+    {
+      "origin": 500012,
+      "name": "욱신욱신",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "발목이 욱신욱신 아파요"
+    },
+    {
+      "origin": 9670,
+      "name": "추위",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "무릎이 시큰시큰 아파요"
+    },
+    {
+      "origin": 500009,
+      "name": "뻐근하고 당기다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "허리부터 오른쪽 허벅지와 종아리 뒤쪽으로 뻐근하고 당겨요."
+    },
+    {
+      "origin": 3762,
+      "name": "걷다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "걸으면 더 아파요"
+    },
+    {
+      "origin": 18941,
+      "name": "앉다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "앉아 있으면 더 아파요"
+    },
+    {
+      "origin": 5361,
+      "name": "서다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "오래 서 있으면 아파요"
+    },
+    {
+      "origin": 9351,
+      "name": "가만히,조용하다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "가만히 있으면 괜찮아요"
+    },
+    {
+      "origin": 12779,
+      "name": "드러눕다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "누우면 좀 괜찮아요"
+    },
+    {
+      "origin": 10419,
+      "name": "먹다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "가끔 찬물 마시거나 음식 씹을 때 통증이 심해요."
+    },
+    {
+      "origin": 7773,
+      "name": "씹다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "가끔 찬물 마시거나 음식 씹을 때 통증이 심해요."
+    },
+    {
+      "origin": 8219,
+      "name": "어지럽다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "어지럽고 울렁거려요"
+    },
+    {
+      "origin": 12776,
+      "name": "두근거리다,불안,설레다,울렁거리다,조마조마하다,두근두근",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "어지럽고 울렁거려요"
+    },
+    {
+      "origin": 12939,
+      "name": "깜짝",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "아파서 깜짝깜짝 놀라요"
+    },
+    {
+      "origin": 6196,
+      "name": "붓다,부풀다,부풀리다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "약 먹으면 붓는 것 같아요"
+    },
+    {
+      "origin": 14297,
+      "name": "두통",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "머리가 아프고 어지러워요"
+    },
+    {
+      "origin": 914,
+      "name": "게우다,구토,토하다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "구역질이 나고 울렁거려요"
+    },
+    {
+      "origin": 10156,
+      "name": "비지땀",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "식은땀이 나요"
+    },
+    {
+      "origin": 500002,
+      "name": "기운이 없다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "기운이 없고 힘이 빠져요"
+    },
+    {
+      "origin": 7138,
+      "name": "아침",
+      "source": "excel_core_keyword",
+      "stage": "통증 시간대/상황별",
+      "sampleAnswer": "아침에 일어날 때 더 아파요"
+    },
+    {
+      "origin": 11241,
+      "name": "밤",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "밤에 통증이 더 심해요"
+    },
+    {
+      "origin": 12462,
+      "name": "잠들다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "자다가 아파서 깰 때가 있어요"
+    },
+    {
+      "origin": 11514,
+      "name": "기상",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "일어나면 조금 괜찮아져요"
+    },
+    {
+      "origin": 9466,
+      "name": "괜찮다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "일어나면 조금 괜찮아져요"
+    },
+    {
+      "origin": 12910,
+      "name": "밤낮",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "시간과 상황에 상관없이 3-4시간 주기로 아파요."
+    },
+    {
+      "origin": 100336,
+      "name": "앉았다가일어나다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "앉았다 일어설 때 아파요."
+    },
+    {
+      "origin": 10843,
+      "name": "온종일",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "하루 종일 아파요"
+    },
+    {
+      "origin": 12723,
+      "name": "날마다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "항상 은근히 아파요"
+    },
+    {
+      "origin": 23903,
+      "name": "오락가락",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "아팠다 안 아팠다 해요"
+    },
+    {
+      "origin": 7094,
+      "name": "쥐",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "자꾸 저려요"
+    },
+    {
+      "origin": 14423,
+      "name": "병",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "특별한 병은 없어요"
+    },
+    {
+      "origin": 14158,
+      "name": "고혈압",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "고혈압은 없어요"
+    },
+    {
+      "origin": 7367,
+      "name": "당뇨병",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "당뇨는 없어요"
+    },
+    {
+      "origin": 11990,
+      "name": "약",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "당뇨가 있어서 약 먹고 있어요"
+    },
+    {
+      "origin": 7390,
+      "name": "결핵",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "예전에 결핵 앓았어요"
+    },
+    {
+      "origin": 6785,
+      "name": "간",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "간염 진단받은 적 있어요"
+    },
+    {
+      "origin": 500016,
+      "name": "진단받다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "간염 진단받은 적 있어요"
+    },
+    {
+      "origin": 7951,
+      "name": "심장",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "심장질환으로 한 달에 한 번씩 병원도 가고, 매일 약도 먹고 있어요."
+    },
+    {
+      "origin": 24010,
+      "name": "병원",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "병원에서 처방받아서 먹고 있어요"
+    },
+    {
+      "origin": 1400,
+      "name": "한약",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "한약은 안 먹어요"
+    },
+    {
+      "origin": 24036,
+      "name": "아니다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "한약은 안 먹어요"
+    },
+    {
+      "origin": 12053,
+      "name": "양분,영양,영양분,자양분",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "영양제는 먹고 있어요"
+    },
+    {
+      "origin": 3810,
+      "name": "관계없다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "약 먹어도 괜찮아요"
+    },
+    {
+      "origin": 6408,
+      "name": "갈등",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "부작용은 없어요"
+    },
+    {
+      "origin": 6765,
+      "name": "가렵다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "알레르기 있어요"
+    },
+    {
+      "origin": 200947,
+      "name": "두드러기",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "약 먹으면 두드러기 나요"
+    },
+    {
+      "origin": 6749,
+      "name": "담배",
+      "source": "excel_core_keyword",
+      "stage": "생활습관(흡역/음주 2단계로 분류)",
+      "sampleAnswer": "담배 안 피워요"
+    },
+    {
+      "origin": 100257,
+      "name": "끊다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "예전에 피웠는데 지금은 끊었어요"
+    },
+    {
+      "origin": 12573,
+      "name": "하나",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "하루에 한 갑 정도 피워요"
+    },
+    {
+      "origin": 6564,
+      "name": "술",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "술은 거의 안 마셔요"
+    },
+    {
+      "origin": 23865,
+      "name": "매일",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "매일 술 마셔요"
+    },
+    {
+      "origin": 7584,
+      "name": "금연",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "금연한 지 오래됐어요"
+    },
+    {
+      "origin": 24029,
+      "name": "삼",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "음주는 한달에 2-3번 마시고, 소주 반 병 정도 마셔요."
+    },
+    {
+      "origin": 7792,
+      "name": "소주",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "음주는 한달에 2-3번 마시고, 소주 반 병 정도 마셔요."
+    },
+    {
+      "origin": 500006,
+      "name": "반병",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "음주는 한달에 2-3번 마시고, 소주 반 병 정도 마셔요."
+    },
+    {
+      "origin": 6556,
+      "name": "수술",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "수술 받은 적 없어요"
+    },
+    {
+      "origin": 500014,
+      "name": "전혀없다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "수술 받은 적 없어요"
+    },
+    {
+      "origin": 8963,
+      "name": "입원",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "입원한 적 없어요"
+    },
+    {
+      "origin": 15012,
+      "name": "척추",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "예전에 디스크 수술했어요"
+    },
+    {
+      "origin": 9594,
+      "name": "치료",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "입원해서 치료받은 적 있어요"
+    },
+    {
+      "origin": 500010,
+      "name": "시술",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "시술은 받아봤어요"
+    },
+    {
+      "origin": 19582,
+      "name": "과거",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "예전에 했는데 지금은 괜찮아요"
+    },
+    {
+      "origin": 500017,
+      "name": "했다",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "예전에 했는데 지금은 괜찮아요"
+    },
+    {
+      "origin": 9525,
+      "name": "주사,접종",
+      "source": "excel_core_keyword",
+      "stage": "치료방향",
+      "sampleAnswer": "주사 맞을게요"
+    },
+    {
+      "origin": 100402,
+      "name": "둘주하나",
+      "source": "excel_core_keyword",
+      "stage": "",
+      "sampleAnswer": "둘 중에 아무거나 괜찮아요"
+    },
+    {
+      "origin": 1214,
+      "name": "공,영",
+      "source": "digit_0_10",
+      "digit": 0
+    },
+    {
+      "origin": 23851,
+      "name": "둘,이",
+      "source": "digit_0_10",
+      "digit": 2
+    },
+    {
+      "origin": 11057,
+      "name": "둘,이",
+      "source": "digit_0_10",
+      "digit": 2
+    },
+    {
+      "origin": 11311,
+      "name": "삼,셋",
+      "source": "digit_0_10",
+      "digit": 3
+    },
+    {
+      "origin": 23841,
+      "name": "넷,사",
+      "source": "digit_0_10",
+      "digit": 4
+    },
+    {
+      "origin": 12528,
+      "name": "넷,사",
+      "source": "digit_0_10",
+      "digit": 4
+    },
+    {
+      "origin": 11419,
+      "name": "여덟,팔",
+      "source": "digit_0_10",
+      "digit": 8
+    },
+    {
+      "origin": 11315,
+      "name": "아홉,구",
+      "source": "digit_0_10",
+      "digit": 9
+    }
+  ],
+  "skipped": [
+    {
+      "cell": "[수포합] (2개월)",
+      "row": 33,
+      "answer": "허리 불편한 지는 2개월 정도 됐어요.",
+      "stage": "",
+      "kind": "supohap",
+      "name": "2개월"
+    },
+    {
+      "cell": "[수포합] (1년)",
+      "row": 36,
+      "answer": "조금씩 아프기 시작한 지가 한 1년 됐고요.",
+      "stage": "",
+      "kind": "supohap",
+      "name": "1년"
+    },
+    {
+      "cell": "[일주일_8303]\n[수포합] (14일)",
+      "row": 43,
+      "answer": "2주 넘게 아파서 왔어요.",
+      "stage": "",
+      "kind": "supohap",
+      "name": "14일"
+    },
+    {
+      "cell": "[하나_12573]\n[생산적어휘] (네모)",
+      "row": 140,
+      "answer": "하루에 한 갑 정도 피워요",
+      "stage": "",
+      "kind": "productive_unmapped",
+      "name": "네모"
+    }
+  ],
+  "digits": [
+    {
+      "digit": 0,
+      "origins": [
+        1214
+      ]
+    },
+    {
+      "digit": 1,
+      "origins": [
+        12573
+      ]
+    },
+    {
+      "digit": 2,
+      "origins": [
+        23851,
+        11057
+      ]
+    },
+    {
+      "digit": 3,
+      "origins": [
+        24029,
+        11311
+      ]
+    },
+    {
+      "digit": 4,
+      "origins": [
+        23841,
+        12528
+      ]
+    },
+    {
+      "digit": 5,
+      "origins": [
+        11055
+      ]
+    },
+    {
+      "digit": 6,
+      "origins": [
+        12841
+      ]
+    },
+    {
+      "digit": 7,
+      "origins": [
+        12397
+      ]
+    },
+    {
+      "digit": 8,
+      "origins": [
+        11419
+      ]
+    },
+    {
+      "digit": 9,
+      "origins": [
+        12707,
+        11315
+      ]
+    },
+    {
+      "digit": 10,
+      "origins": [
+        10919
+      ]
+    }
+  ]
+}

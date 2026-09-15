@@ -1,0 +1,731 @@
+{
+ "generatedAt": "2026-09-15T08:15:24.780113+00:00",
+ "glossSet": "keywords",
+ "note": "질문 의도별 표제어 후보 집합. primary는 부류 전체, secondary는 관찰된 것만 낸다.",
+ "sets": {
+  "body_part": {
+   "label": "신체 부위",
+   "glossIds": [
+    944,
+    1519,
+    6785,
+    7364,
+    7951,
+    12028,
+    14363,
+    15012,
+    200202,
+    500004
+   ],
+   "sample": [
+    "무릎",
+    "허리",
+    "(신체의)다리",
+    "엉덩이,궁둥이,볼기,히프",
+    "명치",
+    "발가락"
+   ],
+   "count": 10
+  },
+  "pain_quality": {
+   "label": "통증 양상·감각 표현",
+   "glossIds": [
+    6196,
+    6765,
+    7491,
+    8219,
+    9650,
+    9670,
+    10454,
+    10493,
+    12776,
+    12939,
+    100342,
+    500009,
+    500012
+   ],
+   "sample": [
+    "찌릿찌릿",
+    "욱신욱신",
+    "뻐근하고 당기다",
+    "어지럽다",
+    "두근거리다,불안,설레다,울렁거리다,조마조마하다,두근두근",
+    "깜짝"
+   ],
+   "count": 13
+  },
+  "severity": {
+   "label": "정도·강도",
+   "glossIds": [
+    9466
+   ],
+   "sample": [
+    "괜찮다,무방하다"
+   ],
+   "count": 1
+  },
+  "number": {
+   "label": "수·점수",
+   "glossIds": [
+    1214,
+    10919,
+    11055,
+    11057,
+    11311,
+    11315,
+    11419,
+    12397,
+    12528,
+    12573,
+    12707,
+    12841,
+    23841,
+    23851,
+    24029
+   ],
+   "sample": [
+    "칠,일곱",
+    "다섯,오",
+    "육,여섯",
+    "구,아홉",
+    "십,열",
+    "하나,일,한번"
+   ],
+   "count": 15
+  },
+  "time": {
+   "label": "시점·기간",
+   "glossIds": [
+    245,
+    6934,
+    7138,
+    8218,
+    8303,
+    11241,
+    11959,
+    12910,
+    19582,
+    23865
+   ],
+   "sample": [
+    "계속,연속,이어,내내,-면서,지속",
+    "어제,어저께,작일",
+    "지난주,작주,전주",
+    "일주일,이레",
+    "밤낮",
+    "매일"
+   ],
+   "count": 10
+  },
+  "frequency": {
+   "label": "빈도",
+   "glossIds": [
+    6934,
+    8303,
+    12723,
+    23865
+   ],
+   "sample": [
+    "날마다,나날,매번,매일,수시,일상,늘,매양,번번",
+    "매일",
+    "계속,연속,이어,내내,-면서,지속",
+    "일주일,이레"
+   ],
+   "count": 4
+  },
+  "position": {
+   "label": "위치·방향",
+   "glossIds": [],
+   "sample": [],
+   "count": 0
+  },
+  "disease": {
+   "label": "질환·병력",
+   "glossIds": [
+    6635,
+    7367,
+    7390,
+    14158,
+    500016
+   ],
+   "sample": [
+    "고혈압",
+    "당뇨병",
+    "결핵",
+    "진단받다",
+    "교통사고"
+   ],
+   "count": 5
+  },
+  "symptom": {
+   "label": "동반 증상",
+   "glossIds": [
+    914,
+    5780,
+    6765,
+    8219,
+    10156,
+    12776,
+    14297,
+    200947,
+    500002
+   ],
+   "sample": [
+    "두통",
+    "기운이 없다",
+    "두드러기",
+    "불면",
+    "게우다,구토,토하다",
+    "비지땀"
+   ],
+   "count": 9
+  },
+  "treatment": {
+   "label": "치료·약·검사",
+   "glossIds": [
+    1400,
+    6556,
+    8963,
+    9525,
+    9594,
+    10419,
+    11950,
+    11990,
+    12053,
+    24010
+   ],
+   "sample": [
+    "며칠전",
+    "약",
+    "한약",
+    "수술",
+    "입원",
+    "주사,접종"
+   ],
+   "count": 10
+  },
+  "body_action": {
+   "label": "동작·자세",
+   "glossIds": [
+    3762,
+    6042,
+    7773,
+    9351,
+    9650,
+    11514,
+    12779,
+    100288,
+    100336
+   ],
+   "sample": [
+    "안움직임",
+    "찌르다",
+    "걷다,걸음,도보,보행",
+    "드러눕다,누이다,눕다,눕히다",
+    "씹다",
+    "앉았다가일어나다"
+   ],
+   "count": 9
+  },
+  "lifestyle": {
+   "label": "생활 습관",
+   "glossIds": [
+    6564,
+    6749,
+    100257,
+    500006
+   ],
+   "sample": [
+    "끊다",
+    "반병",
+    "담배,흡연",
+    "술,알코올"
+   ],
+   "count": 4
+  },
+  "polarity": {
+   "label": "유무·확신",
+   "glossIds": [
+    7817,
+    9466,
+    24036
+   ],
+   "sample": [
+    "(불가능)없다",
+    "아니다,않다",
+    "괜찮다,무방하다"
+   ],
+   "count": 3
+  },
+  "food": {
+   "label": "음식·알레르기 원인",
+   "glossIds": [
+    6564,
+    7094,
+    7792,
+    10419
+   ],
+   "sample": [
+    "먹다,식사",
+    "술,알코올",
+    "소주",
+    "쥐"
+   ],
+   "count": 4
+  },
+  "occupation": {
+   "label": "직업·직장",
+   "glossIds": [],
+   "sample": [],
+   "count": 0
+  },
+  "emotion": {
+   "label": "감정·심리",
+   "glossIds": [
+    6408,
+    9466
+   ],
+   "sample": [
+    "괜찮다,무방하다",
+    "갈등,마찰,거북하다,껄끄럽다"
+   ],
+   "count": 2
+  }
+ },
+ "subCategorySets": {
+  "chief_complaint": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "symptom",
+    "disease",
+    "pain_quality",
+    "severity"
+   ]
+  },
+  "location": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "position"
+   ]
+  },
+  "side": {
+   "primary": [
+    "position"
+   ],
+   "secondary": [
+    "body_part"
+   ]
+  },
+  "onset": {
+   "primary": [
+    "time"
+   ],
+   "secondary": [
+    "number",
+    "body_action"
+   ]
+  },
+  "duration": {
+   "primary": [
+    "time"
+   ],
+   "secondary": [
+    "number"
+   ]
+  },
+  "quality": {
+   "primary": [
+    "pain_quality"
+   ],
+   "secondary": [
+    "severity",
+    "body_part"
+   ]
+  },
+  "severity": {
+   "primary": [
+    "severity"
+   ],
+   "secondary": [
+    "number",
+    "pain_quality"
+   ]
+  },
+  "pain_score": {
+   "primary": [
+    "number"
+   ],
+   "secondary": [
+    "severity"
+   ]
+  },
+  "pattern": {
+   "primary": [
+    "frequency"
+   ],
+   "secondary": [
+    "time",
+    "pain_quality",
+    "severity"
+   ]
+  },
+  "time_variation": {
+   "primary": [
+    "time"
+   ],
+   "secondary": [
+    "frequency",
+    "severity"
+   ]
+  },
+  "frequency": {
+   "primary": [
+    "frequency"
+   ],
+   "secondary": [
+    "number",
+    "time"
+   ]
+  },
+  "trigger_posture": {
+   "primary": [
+    "body_action"
+   ],
+   "secondary": [
+    "body_part",
+    "position"
+   ]
+  },
+  "sensory_trigger": {
+   "primary": [
+    "pain_quality"
+   ],
+   "secondary": [
+    "body_part",
+    "food"
+   ]
+  },
+  "dental_trigger": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "body_action",
+    "food",
+    "pain_quality"
+   ]
+  },
+  "associated": {
+   "primary": [
+    "symptom"
+   ],
+   "secondary": [
+    "disease",
+    "pain_quality",
+    "body_part"
+   ]
+  },
+  "red_flag": {
+   "primary": [
+    "symptom",
+    "disease"
+   ],
+   "secondary": [
+    "body_part",
+    "polarity"
+   ]
+  },
+  "neuro_weakness": {
+   "primary": [
+    "pain_quality"
+   ],
+   "secondary": [
+    "body_part",
+    "symptom",
+    "polarity"
+   ]
+  },
+  "function": {
+   "primary": [
+    "body_action"
+   ],
+   "secondary": [
+    "lifestyle",
+    "severity",
+    "polarity"
+   ]
+  },
+  "sleep": {
+   "primary": [
+    "lifestyle"
+   ],
+   "secondary": [
+    "time",
+    "severity",
+    "polarity"
+   ]
+  },
+  "history": {
+   "primary": [
+    "disease"
+   ],
+   "secondary": [
+    "symptom",
+    "time",
+    "polarity"
+   ]
+  },
+  "surgery_history": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "body_part",
+    "time",
+    "polarity"
+   ]
+  },
+  "surgery_site": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "position",
+    "treatment"
+   ]
+  },
+  "surgery_time": {
+   "primary": [
+    "time"
+   ],
+   "secondary": [
+    "number"
+   ]
+  },
+  "exam_history": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "time",
+    "polarity"
+   ]
+  },
+  "prior_treatment": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "time",
+    "polarity"
+   ]
+  },
+  "treatment_effect": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "severity",
+    "polarity"
+   ]
+  },
+  "treatment_choice": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "polarity"
+   ]
+  },
+  "medication_use": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "frequency",
+    "polarity"
+   ]
+  },
+  "medication_name": {
+   "primary": [
+    "treatment"
+   ],
+   "secondary": [
+    "disease"
+   ]
+  },
+  "adverse_reaction": {
+   "primary": [
+    "symptom"
+   ],
+   "secondary": [
+    "pain_quality",
+    "treatment",
+    "polarity"
+   ]
+  },
+  "skin_lesion": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "pain_quality",
+    "symptom",
+    "position"
+   ]
+  },
+  "swelling": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "pain_quality",
+    "position"
+   ]
+  },
+  "disc_or_muscle": {
+   "primary": [
+    "body_part"
+   ],
+   "secondary": [
+    "disease",
+    "pain_quality"
+   ]
+  },
+  "lifestyle": {
+   "primary": [
+    "lifestyle"
+   ],
+   "secondary": [
+    "frequency",
+    "number",
+    "food"
+   ]
+  },
+  "occupation": {
+   "primary": [
+    "occupation"
+   ],
+   "secondary": [
+    "lifestyle",
+    "body_action"
+   ]
+  },
+  "greeting": {
+   "primary": [],
+   "secondary": [
+    "polarity"
+   ]
+  },
+  "general": {
+   "primary": [],
+   "secondary": [
+    "polarity",
+    "severity"
+   ]
+  },
+  "identity": {
+   "primary": [],
+   "secondary": []
+  }
+ },
+ "questionPatterns": [
+  {
+   "pattern": "어디(가|를|에|서)?|부위|어느\\s*쪽|어느\\s*부분",
+   "sets": [
+    "body_part"
+   ],
+   "secondarySets": [
+    "position"
+   ]
+  },
+  {
+   "pattern": "어떻게\\s*아프|어떤\\s*느낌|양상|쑤시|저리|결리|묘사",
+   "sets": [
+    "pain_quality"
+   ],
+   "secondarySets": [
+    "severity",
+    "body_part"
+   ]
+  },
+  {
+   "pattern": "언제부터|얼마나\\s*오래|기간|시작",
+   "sets": [
+    "time"
+   ],
+   "secondarySets": [
+    "number",
+    "body_action"
+   ]
+  },
+  {
+   "pattern": "몇\\s*점|점수|강도|얼마나\\s*아프|많이\\s*아프",
+   "sets": [
+    "number",
+    "severity"
+   ],
+   "secondarySets": [
+    "pain_quality"
+   ]
+  },
+  {
+   "pattern": "얼마나\\s*자주|빈도|하루에|일주일에",
+   "sets": [
+    "frequency"
+   ],
+   "secondarySets": [
+    "number",
+    "time"
+   ]
+  },
+  {
+   "pattern": "무슨\\s*약|약\\s*이름|복용",
+   "sets": [
+    "treatment"
+   ],
+   "secondarySets": [
+    "frequency",
+    "polarity",
+    "disease"
+   ]
+  },
+  {
+   "pattern": "수술|시술|검사",
+   "sets": [
+    "treatment"
+   ],
+   "secondarySets": [
+    "body_part",
+    "time",
+    "polarity"
+   ]
+  },
+  {
+   "pattern": "자세|동작|움직|굽히|숙이|돌리",
+   "sets": [
+    "body_action"
+   ],
+   "secondarySets": [
+    "body_part",
+    "position",
+    "pain_quality"
+   ]
+  },
+  {
+   "pattern": "담배|(?<![수시])술|흡연|음주",
+   "sets": [
+    "lifestyle"
+   ],
+   "secondarySets": [
+    "frequency",
+    "number",
+    "food"
+   ]
+  }
+ ]
+}
