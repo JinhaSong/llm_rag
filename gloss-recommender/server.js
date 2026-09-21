@@ -2295,8 +2295,11 @@ app.post('/api/keywords', async (req, res) => {
       stage = classification.predictedStage || classification.stage || '';
       subCategory = classification.predictedSubCategory || classification.subCategory || '';
       if (classification.outOfScope || isOutOfScopeLabel(stage, subCategory)) {
+        // 범위 외에도 응답 필드 구성을 정상 경로와 같게 유지한다.
         return res.json({
-          question, stage, subCategory, outOfScope: true,
+          question, stage, subCategory,
+          glossSet: GLOSS_SET, glossSetLabel: GLOSS_SET_LABEL,
+          outOfScope: true,
           ...classifyQuestionType(question),
           ...resolveNumericQuestion(question, subCategory),
           count: 0, keywords: [], classification,
