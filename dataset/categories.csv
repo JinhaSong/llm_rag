@@ -1,0 +1,50 @@
+﻿stage,sub_category,question_count
+과거질환,history,12
+생활습관,general,1
+생활습관,lifestyle,8
+생활습관,occupation,5
+수술 및 입원 이력,exam_history,2
+수술 및 입원 이력,lifestyle,3
+수술 및 입원 이력,surgery_history,2
+수술 및 입원 이력,surgery_site,1
+수술 및 입원 이력,surgery_time,1
+알레르기 및 약물반응,adverse_reaction,9
+알레르기 및 약물반응,associated,1
+알레르기 및 약물반응,medication_use,2
+약물복용,medication_name,1
+약물복용,medication_use,8
+진료개시,chief_complaint,4
+진료개시,exam_history,2
+진료개시,greeting,1
+진료개시,identity,1
+진료개시,prior_treatment,3
+치료 방향 설명 및 선택 제안,treatment_choice,10
+통증 동반증상,associated,9
+통증 동반증상,neuro_weakness,3
+통증 동반증상,red_flag,5
+통증 동반증상,sleep,1
+통증 동반증상,swelling,1
+통증 발생시점,onset,10
+통증 발생시점,pattern,2
+통증 부위,disc_or_muscle,2
+통증 부위,location,13
+통증 부위,side,3
+통증 시간대/상황별 변화,function,3
+통증 시간대/상황별 변화,severity,3
+통증 시간대/상황별 변화,time_variation,6
+통증 시간대/상황별 변화,trigger_posture,8
+통증 양상,general,1
+통증 양상,quality,22
+통증 양상,skin_lesion,2
+통증 유발/완화 요인,dental_trigger,3
+통증 유발/완화 요인,sensory_trigger,2
+통증 유발/완화 요인,severity,2
+통증 유발/완화 요인,treatment_effect,3
+통증 유발/완화 요인,trigger_posture,15
+통증 지속성/패턴,duration,3
+통증 지속성/패턴,frequency,3
+통증 지속성/패턴,pattern,7
+통증 지속성/패턴,trigger_posture,2
+통증강도,function,2
+통증강도,pain_score,7
+통증강도,severity,5
