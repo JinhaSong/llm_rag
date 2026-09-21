@@ -1183,19 +1183,8 @@ const NUMERIC_SUBCATEGORIES = new Set([
 function resolveNumericQuestion(question, subCategory) {
   const { primary } = resolveIntentSets(question, subCategory);
   const sub = String(subCategory || '').trim();
-  const isNumericQuestion = primary.includes('number') || NUMERIC_SUBCATEGORIES.has(sub);
-  let numericGlossIds = [];
-  let numericDigits = {};
-  if (isNumericQuestion) {
-    try {
-      numericDigits = loadKeywordGlossMap()?.digitToGloss || {};
-      numericGlossIds = [...new Set(Object.values(numericDigits).flat())];
-    } catch {
-      numericDigits = {};
-      numericGlossIds = [];
-    }
-  }
-  return { isNumericQuestion, numericGlossIds, numericDigits };
+  // 참일 때 숫자 표제어는 keywords 에 그대로 실려 나가므로 별도 목록은 내보내지 않는다.
+  return { isNumericQuestion: primary.includes('number') || NUMERIC_SUBCATEGORIES.has(sub) };
 }
 
 // 스코어는 연속값이 아니라 근거의 종류를 나타내는 단계값이다. 값이 촘촘하면
@@ -2301,7 +2290,7 @@ app.post('/api/keywords', async (req, res) => {
           question, stage, subCategory, outOfScope: true,
           ...classifyQuestionType(question),
           ...resolveNumericQuestion(question, subCategory),
-          count: 0, keywords: [], output: [], pairs: [], classification,
+          count: 0, keywords: [], classification,
         });
       }
     }
@@ -2326,14 +2315,9 @@ app.post('/api/keywords', async (req, res) => {
     }
     if (!recommended.ok) return res.status(recommended.status).json(recommended.data);
 
-    const keywords = (recommended.data.keywordCandidates || []).map(item => ({
-      keyword: item.gloss || item.name,
-      glossId: Number(item.glossIndex ?? item.origin),
-      score: Number(item.score),
-      source: item.source,
-      intentRole: item.intentRole,
-      intentLabel: item.intentLabel || '',
-    }));
+    // 표제어는 "이름_고유번호" 한 형태로만 내보낸다.
+    const keywords = (recommended.data.keywordCandidates || [])
+      .map(item => `${item.gloss || item.name}_${Number(item.glossIndex ?? item.origin)}`);
     res.json({
       question,
       stage,
@@ -2347,10 +2331,6 @@ app.post('/api/keywords', async (req, res) => {
       ...resolveNumericQuestion(question, subCategory),
       count: keywords.length,
       keywords,
-      output: keywords.map(item => [`${item.keyword}_${item.glossId}`, item.score]),
-      tuples: keywords.map(item => [item.glossId, item.keyword, item.score]),
-      pairs: keywords.map(item => [item.keyword, item.score]),
-      idPairs: keywords.map(item => [item.glossId, item.score]),
       latencyMs: {
         total: Date.now() - startedAt,
         classify: classification?.latencyMs?.total || 0,
