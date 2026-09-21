@@ -1125,6 +1125,41 @@ function resolveIntentSets(question, subCategory) {
   return { primary, secondary: resolvedSecondary.filter(name => !primary.includes(name)) };
 }
 
+// 수어 인식 쪽은 손가락 하나로 표현되는 수어가 서로 겹쳐 오인식이 잦다. 질문이
+// 수(數)를 묻는다는 것만 알아도 후보를 0~10으로 좁힐 수 있어서, 판정 결과와 함께
+// 좁힐 대상 표제어 목록을 같이 내보낸다. (2026-09-21 회의 요구사항)
+// 수포합(수 분류사가 포합된 표현: 이틀·사흘·어제·그저께 등)은 표제어 풀에서 빼고
+// 숫자+단위 조합으로 답하게 했으므로, 시점·기간 질문도 여기서 숫자 질문이 된다.
+// 답이 수로 표현되는 세부유형. 수포합을 뺀 뒤로 시점·기간도 "2 + 날 + 전"처럼
+// 숫자 조합으로 답하게 되어 여기에 포함된다. 시간대(time_variation)는 아침·저녁·밤이
+// 각각 표제어로 남아 있으므로 숫자 질문이 아니다.
+const NUMERIC_SUBCATEGORIES = new Set([
+  'pain_score',   // 몇 점
+  'severity',     // 정도 (점수로 답하는 경우가 많다)
+  'onset',        // 언제부터 -> N일/개월/년 전
+  'duration',     // 얼마나 지속 -> N일
+  'frequency',    // 하루에 몇 번
+  'surgery_time', // 수술 시기 -> N년 전
+]);
+
+function resolveNumericQuestion(question, subCategory) {
+  const { primary } = resolveIntentSets(question, subCategory);
+  const sub = String(subCategory || '').trim();
+  const isNumericQuestion = primary.includes('number') || NUMERIC_SUBCATEGORIES.has(sub);
+  let numericGlossIds = [];
+  let numericDigits = {};
+  if (isNumericQuestion) {
+    try {
+      numericDigits = loadKeywordGlossMap()?.digitToGloss || {};
+      numericGlossIds = [...new Set(Object.values(numericDigits).flat())];
+    } catch {
+      numericDigits = {};
+      numericGlossIds = [];
+    }
+  }
+  return { isNumericQuestion, numericGlossIds, numericDigits };
+}
+
 // 스코어는 연속값이 아니라 근거의 종류를 나타내는 단계값이다. 값이 촘촘하면
 // 어디까지가 쓸 만한 후보인지 후속 모듈이 판단할 수 없다.
 const KEYWORD_TIERS = {
@@ -1892,6 +1927,7 @@ app.post('/api/llm-pipeline/classify', async (req, res) => {
         raw: '',
         classifySource: fast.classifySource || 'qa_pool_fast_match',
         outOfScope,
+        ...resolveNumericQuestion(question, fast.subCategory || ''),
         latencyMs: {
           total: Date.now() - startedAt,
           llm: 0,
@@ -1925,6 +1961,7 @@ app.post('/api/llm-pipeline/classify', async (req, res) => {
       labels,
       raw,
       outOfScope,
+      ...resolveNumericQuestion(question, resolved.subCategory || ''),
       latencyMs: {
         total: Date.now() - startedAt,
         llm: llmLatency,
@@ -2163,6 +2200,7 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
       glossSet: GLOSS_SET,
       glossSetLabel: GLOSS_SET_LABEL,
       glossDocCount: (glossVectorDb.documents || []).length,
+      ...resolveNumericQuestion(question, confirmedSubCategory),
       latencyMs: {
         total: Date.now() - startedAt,
         knownQuestionSearch: knownQuestionSearchLatency,
