@@ -42,6 +42,6 @@ dataset-builder/data/llm_pipeline/*
 *.bak[0-9]
 
 # C++ 클라이언트 빌드 산출물
-client/gloss_client
-client/gloss_client.exe
-client/*.o
+deploy/client/gloss_client
+deploy/client/gloss_client.exe
+deploy/client/*.o
