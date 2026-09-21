@@ -36,3 +36,7 @@ dataset-builder/data/llm_pipeline/*
 !dataset-builder/data/llm_pipeline/intent_gloss_sets.json
 !dataset-builder/data/llm_pipeline/variants/
 !dataset-builder/data/llm_pipeline/variants/**
+
+# 변환 스크립트가 만드는 백업
+*.bak
+*.bak[0-9]
