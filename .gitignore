@@ -40,8 +40,3 @@ dataset-builder/data/llm_pipeline/*
 # 변환 스크립트가 만드는 백업
 *.bak
 *.bak[0-9]
-
-# C++ 클라이언트 빌드 산출물
-deploy/client/gloss_client
-deploy/client/gloss_client.exe
-deploy/client/*.o
