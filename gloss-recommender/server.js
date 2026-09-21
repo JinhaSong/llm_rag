@@ -308,7 +308,8 @@ function ruleClassifyQuestion(question) {
       classifySource: 'rule_fast_match',
     };
   }
-  if (/(술|담배|흡연|음주|소주|맥주|금연|생활습관|태우|피우|마시)/.test(text)) {
+  // '수술'·'시술'의 '술'이 걸리지 않도록 가드한다. (intent 패턴과 동일 규칙)
+  if (/((?<![수시])술|담배|흡연|음주|소주|맥주|금연|생활습관|태우|피우|마시)/.test(text)) {
     return {
       stage: '생활습관',
       subCategory: 'lifestyle',
@@ -356,7 +357,8 @@ function ruleClassifyQuestion(question) {
       classifySource: 'rule_fast_match',
     };
   }
-  if (/(몇점|점수|정도|얼마나아프|많이아프|심하)/.test(text)) {
+  // 시간대·상황 표현이 있으면 강도 질문이 아니다. ("밤에 많이 아프세요?")
+  if (/^(?!.*(아침|저녁|밤|새벽|오전|오후|낮|시간대|어떤시간|무슨시간|주무실|일어날때|어떤상황)).*(몇점|점수|정도|얼마나아프|많이아프|심하)/.test(text)) {
     return {
       stage: '통증강도',
       subCategory: 'severity',
@@ -386,7 +388,11 @@ function fastClassifyFromQaPool(question, pool, minScore = 0.75) {
       return { item, score };
     })
     .filter(row => row.score > 0)
-    .sort((a, b) => b.score - a.score);
+    // 포함 매칭은 길이와 무관하게 0.95 로 같다. 동점이면 더 긴(구체적인) 질문을 택한다.
+    // 그렇지 않으면 "저리세요?" 같은 짧은 항목이 "가만히 있을 때 저리세요?
+    // 걸어 다니실 때 저리세요?" 같은 복합 질문을 가로챈다.
+    .sort((a, b) => (b.score - a.score)
+      || (normalizeToken(b.item.question || '').length - normalizeToken(a.item.question || '').length));
 
   const best = scored[0];
   if (!best || best.score < minScore) return null;
