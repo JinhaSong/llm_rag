@@ -2297,7 +2297,12 @@ app.post('/api/keywords', async (req, res) => {
       stage = classification.predictedStage || classification.stage || '';
       subCategory = classification.predictedSubCategory || classification.subCategory || '';
       if (classification.outOfScope || isOutOfScopeLabel(stage, subCategory)) {
-        return res.json({ question, stage, subCategory, outOfScope: true, count: 0, keywords: [], pairs: [], classification });
+        return res.json({
+          question, stage, subCategory, outOfScope: true,
+          ...classifyQuestionType(question),
+          ...resolveNumericQuestion(question, subCategory),
+          count: 0, keywords: [], output: [], pairs: [], classification,
+        });
       }
     }
 
@@ -2336,6 +2341,10 @@ app.post('/api/keywords', async (req, res) => {
       glossSet: GLOSS_SET,
       glossSetLabel: GLOSS_SET_LABEL,
       outOfScope: false,
+      // 후속(수어 인식) 모듈이 후보를 좁히는 데 쓰는 신호.
+      // 라벨이 409로 보정된 경우 보정된 subCategory 기준으로 계산한다.
+      ...classifyQuestionType(question),
+      ...resolveNumericQuestion(question, subCategory),
       count: keywords.length,
       keywords,
       output: keywords.map(item => [`${item.keyword}_${item.glossId}`, item.score]),
