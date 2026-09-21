@@ -385,14 +385,17 @@ function fastClassifyFromQaPool(question, pool, minScore = 0.75) {
       const exact = itemQuestion && itemQuestion === query;
       const contained = itemQuestion && (itemQuestion.includes(query) || query.includes(itemQuestion));
       const score = exact ? 1 : contained ? 0.95 : scorePoolQuestion(question, item);
-      return { item, score };
+      return { item, score, exact: Boolean(exact), len: itemQuestion.length };
     })
     .filter(row => row.score > 0)
-    // 포함 매칭은 길이와 무관하게 0.95 로 같다. 동점이면 더 긴(구체적인) 질문을 택한다.
-    // 그렇지 않으면 "저리세요?" 같은 짧은 항목이 "가만히 있을 때 저리세요?
-    // 걸어 다니실 때 저리세요?" 같은 복합 질문을 가로챈다.
-    .sort((a, b) => (b.score - a.score)
-      || (normalizeToken(b.item.question || '').length - normalizeToken(a.item.question || '').length));
+    // 1) 완전일치가 항상 최우선이다. scorePoolQuestion 은 hits/tokens 라 퍼지 매칭도
+    //    1.0 에 도달할 수 있어, 점수만으로 정렬하면 완전일치가 밀릴 수 있다.
+    // 2) 그 다음 점수. 3) 동점이면 더 긴(구체적인) 질문. 포함 매칭은 길이와 무관하게
+    //    0.95 로 같아서, 이게 없으면 "저리세요?" 같은 짧은 항목이 "가만히 있을 때
+    //    저리세요? 걸어 다니실 때 저리세요?" 같은 복합 질문을 가로챈다.
+    .sort((a, b) => (Number(b.exact) - Number(a.exact))
+      || (b.score - a.score)
+      || (b.len - a.len));
 
   const best = scored[0];
   if (!best || best.score < minScore) return null;
