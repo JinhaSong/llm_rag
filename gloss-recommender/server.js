@@ -1130,6 +1130,44 @@ function resolveIntentSets(question, subCategory) {
 // 좁힐 대상 표제어 목록을 같이 내보낸다. (2026-09-21 회의 요구사항)
 // 수포합(수 분류사가 포합된 표현: 이틀·사흘·어제·그저께 등)은 표제어 풀에서 빼고
 // 숫자+단위 조합으로 답하게 했으므로, 시점·기간 질문도 여기서 숫자 질문이 된다.
+// 질문 유형(오픈형/선택형/확인형). 후속 모듈이 답변 형태를 미리 알면 인식 후보를
+// 좁힐 수 있다. 판정 기준은 2026-09-21 회의 정의를 따른다.
+//   선택형: 보기를 2개 이상 제시하고 그중 하나를 고르게 하는 질문
+//   확인형: 예/아니오로 답하는 질문
+//   오픈형: 자유 응답을 요구하는 질문
+// 점수 질문("몇 점이나 되세요?")은 보기를 제시하지 않으므로 오픈형이며,
+// 수를 묻는다는 사실은 isNumericQuestion 으로 따로 전달한다.
+const QTYPE_WH = /어디|언제|어떻게|어떤|어떨|어때|무엇|무슨|얼마나|얼마|몇|어느|왜|누가|어떠/;
+const QTYPE_CHOICE = [
+  /아니면/,
+  /(이|가|은|는)?\s*냐\s*.{0,12}냐/,
+  /(중에|중\s*(어느|언제|무엇|뭐|어떤))/,
+  /(오른쪽|왼쪽|좌측|우측).{0,8}(오른쪽|왼쪽|좌측|우측)/,
+  /(아침|점심|저녁|낮|밤|새벽|오전|오후).{0,16}(아침|점심|저녁|낮|밤|새벽|오전|오후)/,
+  /까요.{0,24}까요/,
+  /\S+이나\s+\S+\s*(있|없|하)/,
+  /(주사|약|수술|시술).{0,20}(주사|약|수술|시술).{0,14}(할까요|드릴까요|해드릴까요|원하세요)/,
+];
+// 의문사가 없어도 자유 응답(열거·서술)을 요구하는 형태
+const QTYPE_OPEN_EXTRA = [
+  /(보세요|말씀해|설명해|표현해)/,
+  /(빈도|정도|기간|시점|증상)(은|는)요/,
+  /다른\s+\S+(은|는|이|가)?\s*(있|없)/,
+];
+const QTYPE_LABEL = { open: '오픈형', choice: '선택형', confirm: '확인형' };
+
+function classifyQuestionType(question) {
+  const s = String(question || '').trim();
+  let qType = 'confirm';
+  if (QTYPE_CHOICE.some(re => re.test(s))
+      || (s.match(/아프세요|아파요|아프신가요/g) || []).length >= 2) {
+    qType = 'choice';
+  } else if (QTYPE_OPEN_EXTRA.some(re => re.test(s)) || QTYPE_WH.test(s)) {
+    qType = 'open';
+  }
+  return { qType, qTypeLabel: QTYPE_LABEL[qType] };
+}
+
 // 답이 수로 표현되는 세부유형. 수포합을 뺀 뒤로 시점·기간도 "2 + 날 + 전"처럼
 // 숫자 조합으로 답하게 되어 여기에 포함된다. 시간대(time_variation)는 아침·저녁·밤이
 // 각각 표제어로 남아 있으므로 숫자 질문이 아니다.
@@ -1927,6 +1965,7 @@ app.post('/api/llm-pipeline/classify', async (req, res) => {
         raw: '',
         classifySource: fast.classifySource || 'qa_pool_fast_match',
         outOfScope,
+        ...classifyQuestionType(question),
         ...resolveNumericQuestion(question, fast.subCategory || ''),
         latencyMs: {
           total: Date.now() - startedAt,
@@ -1961,6 +2000,7 @@ app.post('/api/llm-pipeline/classify', async (req, res) => {
       labels,
       raw,
       outOfScope,
+      ...classifyQuestionType(question),
       ...resolveNumericQuestion(question, resolved.subCategory || ''),
       latencyMs: {
         total: Date.now() - startedAt,
@@ -2200,6 +2240,7 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
       glossSet: GLOSS_SET,
       glossSetLabel: GLOSS_SET_LABEL,
       glossDocCount: (glossVectorDb.documents || []).length,
+      ...classifyQuestionType(question),
       ...resolveNumericQuestion(question, confirmedSubCategory),
       latencyMs: {
         total: Date.now() - startedAt,
