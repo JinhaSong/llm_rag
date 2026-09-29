@@ -2,6 +2,7 @@ const express = require('express');
 const XLSX = require('xlsx');
 const path = require('path');
 const fs = require('fs');
+const { analyzeQuestionContent } = require('./question-gate');
 
 const app = express();
 app.use(express.json());
@@ -383,7 +384,10 @@ function fastClassifyFromQaPool(question, pool, minScore = 0.75) {
     .map(item => {
       const itemQuestion = normalizeToken(item.question || '');
       const exact = itemQuestion && itemQuestion === query;
-      const contained = itemQuestion && (itemQuestion.includes(query) || query.includes(itemQuestion));
+      // 포함 매칭은 양쪽 모두 4자 이상일 때만 본다. 짧으면 "."나 "음" 같은 입력이
+      // 수많은 질문에 부분문자열로 걸려 0.95점을 받는다.
+      const contained = itemQuestion && query.length >= 4 && itemQuestion.length >= 4 &&
+        (itemQuestion.includes(query) || query.includes(itemQuestion));
       const score = exact ? 1 : contained ? 0.95 : scorePoolQuestion(question, item);
       return { item, score, exact: Boolean(exact), len: itemQuestion.length };
     })
@@ -413,6 +417,36 @@ function fastClassifyFromQaPool(question, pool, minScore = 0.75) {
     margin: Number(margin.toFixed(4)),
     matchedQuestion: best.item.question || '',
   };
+}
+
+function questionGate(question, qaPool) {
+  return analyzeQuestionContent(question, (qaPool.questions || []).map(item => item.question || ''));
+}
+
+// 질문이 없거나 모호하면 분류·추천을 멈추고 이 필드로 이유를 알린다.
+function suppressionFields(gate) {
+  return {
+    noQuestion: gate.code === 'no_question',
+    ambiguous: gate.code !== 'no_question',
+    keywordSuppressed: true,
+    suppressReason: gate.code,
+    suppressMessage: gate.message,
+  };
+}
+
+// 답변 pool이 이 질문의 답이라고 볼 수 없으면 표제어를 내지 않는다.
+// 데이터셋에 있는 질문은 답변이 검증돼 있으므로 판정하지 않는다.
+// 검색 유사도가 낮다는 것만으로는 막지 않는다. "10점 중에 몇 점?"처럼 명확한 새 질문도
+// 유사도가 낮게 나오고, 무의미한 입력은 질문 판정에서 이미 걸러진다.
+function answerAmbiguity({ exactKnownQuestion, answerPoolSource, answerCount, resolvedCount }) {
+  if (exactKnownQuestion) return null;
+  if (answerPoolSource === 'category_fallback_answer_pool' || answerPoolSource === 'llm_empty_answer_pool') {
+    return { code: 'ambiguous_answer', message: '질문에 맞는 환자 답변을 찾지 못해 표제어를 추천하지 않습니다.' };
+  }
+  if (answerCount > 0 && resolvedCount === 0) {
+    return { code: 'ambiguous_answer', message: '환자 답변에서 표제어를 하나도 특정하지 못해 표제어를 추천하지 않습니다.' };
+  }
+  return null;
 }
 
 function validateConfirmedLabel(question, qaPool, stage, subCategory) {
@@ -1940,6 +1974,27 @@ app.post('/api/llm-pipeline/classify', async (req, res) => {
   try {
     const qaPool = loadQuestionAnswerPool();
     const labels = stageLabelsFromQaPool(qaPool);
+    const gate = questionGate(question, qaPool);
+    if (!gate.ok) {
+      return res.json({
+        engine: 'llm-question-pipeline',
+        mode: 'classify',
+        question,
+        predictedStage: '',
+        predictedSubCategory: '',
+        stage: '',
+        subCategory: '',
+        reason: gate.message,
+        requiresHumanConfirmation: true,
+        nextStep: gate.message,
+        labels,
+        raw: '',
+        classifySource: 'question_gate',
+        outOfScope: false,
+        ...suppressionFields(gate),
+        latencyMs: { total: Date.now() - startedAt, llm: 0 },
+      });
+    }
     const fast = req.body.fastClassify === false
       ? null
       : (ruleClassifyQuestion(question) || fastClassifyFromQaPool(question, qaPool));
@@ -2032,6 +2087,25 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
   try {
     const qaPool = loadQuestionAnswerPool();
     const glossVectorDb = loadLlmGlossVectorDb();
+    // 분석 화면에서 분류를 사람이 지정해도 질문 자체가 비었거나 모호하면 추천하지 않는다.
+    const gate = questionGate(question, qaPool);
+    if (!gate.ok) {
+      return res.json({
+        engine: 'llm-question-pipeline',
+        mode: 'recommend',
+        question,
+        stage: confirmedStage,
+        subCategory: confirmedSubCategory,
+        ...suppressionFields(gate),
+        answerPool: [],
+        keywordCandidates: [],
+        glossCandidates: [],
+        outputTuples: [],
+        glossSet: GLOSS_SET,
+        glossSetLabel: GLOSS_SET_LABEL,
+        latencyMs: { total: Date.now() - startedAt },
+      });
+    }
     const labelValidation = validateConfirmedLabel(question, qaPool, confirmedStage, confirmedSubCategory);
     const allowMismatch = req.body.allowMismatchedLabel === true;
     if (!labelValidation.ok && !allowMismatch) {
@@ -2168,7 +2242,15 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
     );
     const keywordResult = buildKeywordCandidates(answerPool, glossVectorDb);
     const keywordOutput = buildKeywordOutput(question, confirmedSubCategory, keywordResult.candidates, glossVectorDb);
-    const keywordCandidates = keywordOutput.candidates;
+    // 답변이 모호하면 답변 pool은 분석용으로 남기고 표제어만 비운다.
+    const answerGate = answerAmbiguity({
+      // 구두점만 다른 데이터셋 질문("안녕하세요" vs "안녕하세요.")도 검증된 질문으로 본다.
+      exactKnownQuestion: exactKnownQuestion || gate.code === 'known_question',
+      answerPoolSource,
+      answerCount: answerPool.length,
+      resolvedCount: answerPool.length - keywordResult.unresolved.length,
+    });
+    const keywordCandidates = answerGate ? [] : keywordOutput.candidates;
     const annotatedAnswerPool = answerPool.map(item => {
       const picked = selectAnswerKeyword(item, loadKeywordGlossMap(), glossVectorDb);
       const base = typeof item === 'string' ? { answer: item } : item;
@@ -2191,6 +2273,7 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
       requiresHumanConfirmation: false,
       confirmedByHuman: true,
       answerPoolSource,
+      ...(answerGate ? suppressionFields(answerGate) : { keywordSuppressed: false }),
       bestKnownQuestionScore: pool.bestQuestionScore,
       matchedQuestionCount: pool.questions?.length || 0,
       retrieval: {
@@ -2233,7 +2316,7 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
         intentSets: keywordOutput.activeSets,
       },
       outputTuples: keywordCandidates.map(item => [item.gloss, item.glossIndex, item.score]),
-      glossCandidates,
+      glossCandidates: answerGate ? [] : glossCandidates,
       labelValidation,
       glossSet: GLOSS_SET,
       glossSetLabel: GLOSS_SET_LABEL,
@@ -2259,7 +2342,24 @@ app.post('/api/llm-pipeline/recommend', async (req, res) => {
 app.post('/api/keywords', async (req, res) => {
   const startedAt = Date.now();
   const question = String(req.body.question || req.body.sentence || '').trim();
-  if (!question) return res.status(400).json({ error: 'question 또는 sentence를 입력하세요.' });
+  // 질문이 없거나 모호하면 오류 대신 빈 표제어 목록으로 정상 응답한다.
+  // 음성 인식 결과가 비거나 간투사뿐인 경우가 흔해서 클라이언트가 오류로 다루지 않게 한다.
+  const emptyKeywords = (gate, extra = {}) => res.json({
+    question,
+    stage: '',
+    subCategory: '',
+    glossSet: GLOSS_SET,
+    glossSetLabel: GLOSS_SET_LABEL,
+    outOfScope: false,
+    ...suppressionFields(gate),
+    ...(question ? classifyQuestionType(question) : {}),
+    count: 0,
+    keywords: [],
+    latencyMs: { total: Date.now() - startedAt },
+    ...extra,
+  });
+  const gate = questionGate(question, loadQuestionAnswerPool());
+  if (!gate.ok) return emptyKeywords(gate);
 
   const internalPost = async (pathName, body) => {
     const response = await fetch(`http://127.0.0.1:${PORT}${pathName}`, {
@@ -2337,6 +2437,12 @@ app.post('/api/keywords', async (req, res) => {
       glossSet: GLOSS_SET,
       glossSetLabel: GLOSS_SET_LABEL,
       outOfScope: false,
+      noQuestion: false,
+      ambiguous: Boolean(recommended.data.keywordSuppressed),
+      keywordSuppressed: Boolean(recommended.data.keywordSuppressed),
+      ...(recommended.data.keywordSuppressed
+        ? { suppressReason: recommended.data.suppressReason, suppressMessage: recommended.data.suppressMessage }
+        : {}),
       // 후속(수어 인식) 모듈이 후보를 좁히는 데 쓰는 신호.
       // 라벨이 409로 보정된 경우 보정된 subCategory 기준으로 계산한다.
       ...classifyQuestionType(question),

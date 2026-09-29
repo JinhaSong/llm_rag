@@ -106,6 +106,13 @@
       return;
     }
 
+    if (run.suppressed) {
+      document.getElementById('resultLabel').textContent = suppressedTitle(run.suppressed);
+      document.getElementById('resultMeta').textContent = run.stage ? `${run.stage} · ${run.subCategory}` : '';
+      document.getElementById('resultBody').innerHTML = suppressedNoticeHtml(run.suppressed);
+      return;
+    }
+
     const items = run.recommend?.keywordCandidates || [];
     document.getElementById('resultLabel').textContent = `핵심 표제어 ${items.length}개`;
     document.getElementById('resultMeta').textContent = `${run.stage} · ${run.subCategory}`;
@@ -129,7 +136,12 @@
 
   async function ask() {
     const question = questionBox.value.trim();
-    if (!question) return questionBox.focus();
+    // 질문 없이 실행하면 이전 질문의 표제어 목록이 남아 보이지 않게 지운다.
+    if (!question) {
+      clearRun();
+      resultCard.style.display = 'none';
+      return questionBox.focus();
+    }
 
     askBtn.disabled = true;
     statusLine.classList.add('visible');

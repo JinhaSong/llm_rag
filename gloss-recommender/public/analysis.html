@@ -149,6 +149,9 @@
 
   function renderKeywordTable() {
     const items = run.recommend?.keywordCandidates || [];
+    if (run.recommend?.keywordSuppressed) {
+      return section(`5. 핵심 표제어 · ${suppressedTitle(run.recommend)}`, suppressedNoticeHtml(run.recommend));
+    }
     return section(`5. 핵심 표제어 (${items.length}개)`, keywordResultTableHtml(items, { showEvidence: true }),
       '질문 대상 및 허용된 보조 의미 부류만 표시합니다. 답변 근거와 의도 확장 여부는 출처 열에서 구분할 수 있습니다.');
   }
@@ -237,6 +240,12 @@
 
   function render() {
     const page = document.getElementById('page');
+    if (run?.suppressed && !run.recommend) {
+      page.innerHTML = renderClassification()
+        + section(`결과 · ${suppressedTitle(run.suppressed)}`, suppressedNoticeHtml(run.suppressed))
+        + renderSettings();
+      return;
+    }
     if (!run) {
       page.innerHTML = section('실행 기록 없음',
         '<div class="empty-note">추천 화면에서 질문을 한 번 실행하면 그 결과의 근거가 여기에 표시됩니다.</div>');

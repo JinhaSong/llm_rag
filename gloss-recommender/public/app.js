@@ -84,6 +84,10 @@ async function runPipeline(question, override = null) {
   const stage = override?.stage || classify?.predictedStage || '';
   const subCategory = override?.subCategory || classify?.predictedSubCategory || '';
 
+  if (classify?.keywordSuppressed && !override) {
+    return { question, classify, recommend: null, outOfScope: false, suppressed: classify, stage, subCategory };
+  }
+
   if (!override && (classify?.outOfScope || isOutOfScopeLabel(stage, subCategory))) {
     return { question, classify, recommend: null, outOfScope: true, stage, subCategory };
   }
@@ -116,6 +120,7 @@ async function runPipeline(question, override = null) {
     classify,
     recommend: res.data,
     outOfScope: false,
+    suppressed: res.data.keywordSuppressed ? res.data : null,
     repaired,
     stage: res.data.stage || stage,
     subCategory: res.data.subCategory || subCategory,
@@ -128,6 +133,25 @@ function saveRun(run) {
   } catch {
     // 결과가 너무 커서 못 담아도 추천 화면 자체는 계속 동작해야 한다.
   }
+}
+
+function clearRun() {
+  try {
+    sessionStorage.removeItem(RESULT_KEY);
+  } catch {
+    // 저장소를 못 쓰면 지울 것도 없다.
+  }
+}
+
+// 질문이 없거나 모호해서 서버가 표제어를 내지 않은 경우의 안내 문구.
+function suppressedTitle(suppressed) {
+  if (suppressed?.suppressReason === 'no_question') return '질문 없음';
+  if (suppressed?.suppressReason === 'ambiguous_answer') return '답변 모호';
+  return '모호한 질문';
+}
+
+function suppressedNoticeHtml(suppressed) {
+  return `<div class="notice warn">${escapeHtml(suppressed?.suppressMessage || '표제어를 추천하지 않았습니다.')}</div>`;
 }
 
 function loadRun() {
